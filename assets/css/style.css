@@ -39,23 +39,13 @@ a:hover{
 }
     
 .back .inner{
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+    padding: 15px;
+
 }
-
-.front{
-     color: #ffffff;
-     width: 100%;
- }
-
-.front .inner p{
-    font-size: 16px;
-    position: relative;
-  }
-
-.front .inner{
-    padding-top: 60px;
-  }
-
 
 .box{
     height: 200px;
@@ -72,33 +62,6 @@ a:hover{
     background-position: center; 
 }
 
-#box1 .front {
-    background-color:#7D80DA;
-  }
-
-#box2 .front {    
-    background-color: #392F5A;
-  }
-
-#box3 .front {
-    background-color: #65655E;
-  }
-  
-#box4 .front {
-    background-color: #1F487E;
-  }
-  
-#box5 .front {
-    background-color: #3E1929;
-  }
-  
-#box6 .front {
-    background-color: #FAA916;
-  }
-  
-#box7 .front {
-    background-color: #909CC2;
-  }
  
 .box .back{
     -webkit-transform: rotateY(180deg);
@@ -137,6 +100,24 @@ a:hover{
 }
 
 
+.front{
+    color: #ffffff;
+    width: 100%;
+}
+
+.front .inner p{
+   font-size: 16px;
+   position: relative;
+ }
+
+.front .inner{
+   padding-top: 60px;
+ }
+
+ .jumbotron{
+     margin-top: 30px;
+ }
+
 .navbar {
     background-color: #65655E;
 }
@@ -145,10 +126,53 @@ a:hover{
     margin-bottom: 20px;
 }
 
+.projectText p{
+    text-align: justify;
+}
+
 .svg-inline--fa {
     font-size: 60px;
     padding-bottom: 10px;
 }
+
+
+#about {
+    text-align: justify;
+}
+
+#aboutImg{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#box1 .front {
+    background-color:#7D80DA;
+  }
+
+#box2 .front {    
+    background-color: #392F5A;
+  }
+
+#box3 .front {
+    background-color: #507255;
+  }
+  
+#box4 .front {
+    background-color: #1F487E;
+  }
+  
+#box5 .front {
+    background-color: #3E1929;
+  }
+  
+#box6 .front {
+    background-color: #FAA916;
+  }
+  
+#box7 .front {
+    background-color: #909CC2;
+  }
 
 #sectionOne{
     background-color: #65655E;
@@ -156,7 +180,6 @@ a:hover{
     background-position: center;
     background-size: cover;
 }
-
 
 #splashText{
     padding-top: 5%;
