@@ -132,6 +132,13 @@ a:hover{
     margin-bottom: 20px;
 }
 
+.projectText{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
 .projectText p{
     text-align: justify;
 }
@@ -140,7 +147,6 @@ a:hover{
     font-size: 60px;
     padding-bottom: 10px;
 }
-
 
 #about {
     text-align: justify;
@@ -178,6 +184,10 @@ a:hover{
   
 #box7 .front {
     background-color: #909CC2;
+  }
+
+#box8 .front {
+    background-color: #507255;
   }
 
 #sectionOne{
