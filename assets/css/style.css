@@ -156,6 +156,7 @@ a:hover{
     float: left;
     margin-right: 10px;
     margin-bottom: 10px;
+    width: 10%;
 }
 
 #box1 .front {
@@ -192,7 +193,7 @@ a:hover{
 
 #sectionOne{
     background-color: #65655E;
-    background-image: url("../images/background.jpg");
+    /* background-image: url("../images/background.jpg"); */
     background-position: center;
     background-size: cover;
 }
