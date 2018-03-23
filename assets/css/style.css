@@ -3,6 +3,13 @@ a {
     text-decoration: none;
 }
 
+footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 80px;
+    text-align: center;
+}
+
 h1 {
     text-align: center;
 }
@@ -56,6 +63,7 @@ a:hover{
 .box{
     height: 200px;
     
+    
     /* for annimation */
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -64,8 +72,9 @@ a:hover{
 }
 
 .box .img {
-    background-size: cover;
-    background-position: center; 
+    /* background-size: cover;
+    background-position: center; */
+     
 }
 
  
@@ -104,6 +113,7 @@ a:hover{
     transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
     transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
+
 
 
 .front{
@@ -146,6 +156,11 @@ a:hover{
 .svg-inline--fa {
     font-size: 60px;
     padding-bottom: 10px;
+}
+
+.recapRow{
+    min-height: 200px;
+    max-height: 200px;
 }
 
 #about {
@@ -191,16 +206,29 @@ a:hover{
     background-color: #507255;
   }
 
-#sectionOne{
-    background-color: #65655E;
-    /* background-image: url("../images/background.jpg"); */
-    background-position: center;
-    background-size: cover;
+#footer-text{
+    max-height: 100px;   
 }
+
+#imgBox3{
+    /* z-index: 100; */
+}
+
+#imgBox4 img{
+    width: 125%;
+}
+
+#imgBox5{
+    background-image: url("../images/coffee.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
 
 #splashText{
     padding-top: 5%;
-    background-color: rgba(225, 225, 225, 0.7);
+    background-color: rgba(225, 225, 225, 1);
     color: #000000;  
 
 }
