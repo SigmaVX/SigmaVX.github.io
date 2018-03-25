@@ -256,6 +256,14 @@ a:hover{
         height: auto;
 }
 
+#aboutImg{
+    float: left;
+    margin-right: 7px;
+    margin-bottom: 0px;
+    
+    width: 25%;
+}
+
 #imgBox2{
     background-image: url("../images/dog-alt.jpg");
     background-size: cover;
