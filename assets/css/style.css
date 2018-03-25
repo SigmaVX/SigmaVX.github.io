@@ -14,7 +14,6 @@ h1 {
     text-align: center;
 }
 
-
 a:hover{
     text-decoration: none;
 }
@@ -113,8 +112,6 @@ a:hover{
     transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 
-
-
 .front{
     color: #ffffff;
     width: 100%;
@@ -164,7 +161,6 @@ a:hover{
 .recapRow{
     height: 200px;
 }
-
 
 #about {
     text-align: justify;
@@ -217,7 +213,6 @@ a:hover{
     width: 125%;
 }
 
-
 #imgBox1{
     background-image: url("../images/nature-lg.jpg");
     background-size: cover;
@@ -252,23 +247,23 @@ a:hover{
  
 @media only screen and (max-width: 600px) {
 
-.recapRow{
-        height: auto;
-}
+    .recapRow{
+            height: auto;
+    }
 
-#aboutImg{
-    float: left;
-    margin-right: 7px;
-    margin-bottom: 0px;
-    
-    width: 25%;
-}
+    #aboutImg{
+        float: left;
+        margin-right: 7px;
+        margin-bottom: 0px;
+        
+        width: 25%;
+    }
 
-#imgBox2{
-    background-image: url("../images/dog-alt.jpg");
-    background-size: cover;
-    background-position: center;
-    min-height: 200px;
-}
+    #imgBox2{
+        background-image: url("../images/dog-alt.jpg");
+        background-size: cover;
+        background-position: center;
+        min-height: 200px;
+    }
 
 }
