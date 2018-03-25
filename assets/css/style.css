@@ -61,8 +61,7 @@ a:hover{
 }
 
 .box{
-    height: 200px;
-    
+    max-height: 200px;
     
     /* for annimation */
     -webkit-transform-style: preserve-3d;
@@ -126,6 +125,10 @@ a:hover{
    position: relative;
  }
 
+ .imgBox{
+    min-height: 200px;
+}
+
 .front .inner{
    padding-top: 60px;
  }
@@ -159,9 +162,9 @@ a:hover{
 }
 
 .recapRow{
-    min-height: 200px;
-    max-height: 200px;
+    height: 200px;
 }
+
 
 #about {
     text-align: justify;
@@ -210,28 +213,54 @@ a:hover{
     max-height: 100px;   
 }
 
-#imgBox3{
-    /* z-index: 100; */
-}
-
 #imgBox4 img{
     width: 125%;
 }
 
-#imgBox5{
+
+#imgBox1{
+    background-image: url("../images/nature-lg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#imgBox2{
+    background-image: url("../images/dog-alt.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+
+#imgBox3{
     background-image: url("../images/coffee.jpg");
     background-size: cover;
     background-position: center;
 }
 
-
+#imgBox4{
+    background-image: url("../images/controller-alt.jpg");
+    background-size: cover;
+    background-position: center;
+}
 
 #splashText{
     padding-top: 5%;
     background-color: rgba(225, 225, 225, 1);
     color: #000000;  
-
 }
   
  
-  
+@media only screen and (max-width: 600px) {
+
+.recapRow{
+        height: auto;
+}
+
+#imgBox2{
+    background-image: url("../images/dog-alt.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+}
+
+}
