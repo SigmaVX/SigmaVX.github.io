@@ -68,13 +68,6 @@ a:hover{
     -webkit-perspective: 1000px;
     perspective: 1000px;
 }
-
-.box .img {
-    /* background-size: cover;
-    background-position: center; */
-     
-}
-
  
 .box .back{
     -webkit-transform: rotateY(180deg);
@@ -112,6 +105,11 @@ a:hover{
     transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 
+.btn {
+    background-color: #5e3bdd;
+    color: #ffffff;
+}
+
 .front{
     color: #ffffff;
     width: 100%;
@@ -122,21 +120,29 @@ a:hover{
    position: relative;
  }
 
- .imgBox{
-    min-height: 200px;
-}
-
 .front .inner{
    padding-top: 60px;
  }
 
- .jumbotron{
-     margin-top: 30px;
- }
+.gitIcons {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px;
+} 
 
-.navbar {
-    background-color: #65655E;
+.imgBox{
+    min-height: 200px;
 }
+ 
+.jumbotron{
+     margin-top: 30px;
+     background: #555555;
+     background: -webkit-linear-gradient(180deg,  #5e3bdd 0%,#555555 100%);
+     background: -o-linear-gradient(180deg,  #5e3bdd 0%,#555555 100%);
+     background: linear-gradient(360deg,  #5e3bdd 0%,#343a40 100%);
+     color: #ffffff;
+ }
 
 .portRow{
     margin-bottom: 20px;
@@ -151,9 +157,10 @@ a:hover{
 
 .projectText p{
     text-align: justify;
+    margin-bottom: 0.1rem;
 }
 
-.svg-inline--fa {
+.inner .svg-inline--fa {
     font-size: 60px;
     padding-bottom: 10px;
 }
