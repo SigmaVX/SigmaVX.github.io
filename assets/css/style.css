@@ -62,7 +62,6 @@ a:hover{
 
 .box{
     max-height: 200px;
-    
     /* for annimation */
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
