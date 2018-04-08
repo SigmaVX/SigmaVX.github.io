@@ -145,10 +145,6 @@ a:hover{
      color: #ffffff;
  }
 
- .navbar{
-    height: 60px;
- }
-
 .portRow{
     margin-bottom: 20px;
 }
@@ -258,6 +254,9 @@ a:hover{
   
  
 @media only screen and (max-width: 600px) {
+    .back, .front {
+          min-width: 50%;
+    }
 
     .recapRow{
             height: auto;
