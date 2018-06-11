@@ -110,6 +110,10 @@ a:hover{
     color: #ffffff;
 }
 
+.float-wrap{
+    float: right;
+}
+
 .front{
     color: #ffffff;
     width: 100%;
@@ -131,10 +135,22 @@ a:hover{
     padding: 0px;
 } 
 
+.header-icon{
+    font-size: 30px;
+    color: #ffffff;
+    margin: 0px 10px;
+    float: right;
+}
+
 .imgBox{
     min-height: 200px;
 }
  
+.inner .svg-inline--fa {
+    font-size: 60px;
+    padding-bottom: 10px;
+}
+
 .jumbotron{
      margin-top: 30px;
      background: #555555;
@@ -158,11 +174,6 @@ a:hover{
 .projectText p{
     text-align: justify;
     margin-bottom: 0.1rem;
-}
-
-.inner .svg-inline--fa {
-    font-size: 60px;
-    padding-bottom: 10px;
 }
 
 .recapRow{
