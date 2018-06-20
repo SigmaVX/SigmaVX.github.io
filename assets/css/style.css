@@ -152,7 +152,7 @@ a:hover{
 }
 
 .jumbotron{
-     margin-top: 30px;
+     /* margin-top: 30px; */
      background: #555555;
      background: -webkit-linear-gradient(225deg, #343a40 50%, #5e3bdd 50%);
      background: -o-linear-gradient(225deg, #343a40 50%, #5e3bdd 50%);
