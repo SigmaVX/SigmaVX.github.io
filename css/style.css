@@ -51,6 +51,10 @@ footer{
     background: linear-gradient(360deg,  #bbb 50%,#322C40 100%);
     border-bottom: 3px solid goldenrod;
     background-attachment: fixed;
+    background-image: url("../images/purplemist.jpg");
+    background-size: cover;
+    background-position: center;
+
 }
 
 .about-title{
@@ -70,7 +74,7 @@ footer{
 .about-text{
     text-align: center;
     font-size: 1.25rem;
-    background: rgba(25,25,25,.3);
+    background: rgba(25,25,25,.4);
     border-radius: 20px;
     padding: 15px;
     font-family: 'Lato', sans-serif;
@@ -244,36 +248,40 @@ footer{
 
 /* Menu Close */
 .bm-cross-button {
-height: 25px;
-width: 25px;
-right: 3px !important;
-position: absolute;
-top: 8px; 
-
+    height: 25px;
+    width: 25px;
+    right: 3px !important;
+    position: absolute;
+    top: 8px; 
 }
 
 /* Close Button */
 .bm-cross {
-background: #fff;
+    background: #fff;
 }
 
 .bm-item{
-min-height: 100%;
-padding: 5px 0px 0px 0px;
+    min-height: 100%;
+    padding: 0px 0px 0px 0px;
 }
 
 .bm-header{
-margin: 15px auto;
-font-size: 40px;
-font-family: 'Trirong', serif;
+    margin: 15px auto;
+    font-size: 40px;
+    
 }
 
 .bm-menu-wrap{
     margin-left: -23px;
+    margin-top: -5px;
 }
 
 .bm-menu{
     overflow: hidden !important;
+}
+
+.bm-overlay{
+    margin-top: -3px;
 }
 
 .bm-morph-shape {
@@ -320,7 +328,7 @@ fill: #242146;
  
 .jumbotron{
      margin-top: 0px;
-     font-size: 4rem;
+     font-size: 3.3rem;
      display: flex;
      /* flex-direction: column; */
      justify-content: center;
@@ -332,7 +340,7 @@ fill: #242146;
      color: #ffffff;
      height: 150px;
      border-bottom: 3px solid goldenrod;
-     font-family: 'Muli', sans-serif;
+     font-family: 'Montserrat', sans-serif;
  }
 
 .navbar{
@@ -385,10 +393,10 @@ fill: #242146;
     grid-gap: 20px;
     justify-items: center;
     align-items: center;
-    background-image: url("../images/whitepattern.jpg");
-    /* background-size: cover; */
+    /* background-image: url("../images/whitetree.jpg");
+    background-size: cover;
     background-position: center;
-    background-repeat: repeat-y;
+    background-repeat: repeat-y; */
 }
 
 .project-grid-child{
@@ -437,6 +445,7 @@ fill: #242146;
 .side-nav-brand-icon-wrapper>p{
     font-size: 1.3rem;
     margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .side-nav-brand-icon{
@@ -496,7 +505,6 @@ fill: #242146;
     background-image: url("../images/purpleflower.jpg");
     background-size: cover;
     background-position: center;
-    min-height: 400px;
 }
 
 #imgBox3{
