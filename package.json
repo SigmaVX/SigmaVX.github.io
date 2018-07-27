@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "gh-pages": "^1.2.0",
     "react": "^16.4.1",
     "react-burger-menu": "^2.5.2",
     "react-dom": "^16.4.1",
@@ -13,11 +12,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "homepage": "https://SigmaVX.github.io"
+    "eject": "react-scripts eject"
   }
 }
