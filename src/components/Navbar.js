@@ -1,6 +1,5 @@
 import React, {Component} from "react";
-import { Link } from "react-router-dom";
-import { bubble as Menu } from 'react-burger-menu';
+// import { Link } from "react-router-dom";
 import VerticalNav from "./VerticalNav";
 
 class Navbar extends Component {
@@ -27,16 +26,15 @@ class Navbar extends Component {
                     Tony Wible
                 </h1>
 
-               
-                    <a className="nav-icon nav-icon1" href="https://github.com/SigmaVX" target="_blank">
+                    <a className="nav-icon nav-icon1" rel="noopener noreferrer" href="https://github.com/SigmaVX" target="_blank">
                         <i className="fab fa-github-square"></i>
                     </a>
                 
-                    <a className="nav-icon" href="https://www.linkedin.com/in/tonywible/" target="_blank">
+                    <a className="nav-icon" rel="noopener noreferrer" href="https://www.linkedin.com/in/tonywible/" target="_blank">
                         <i className="fab fa-linkedin"></i>
                     </a>
 
-                    <a className="nav-icon" href="mailto: [tonywible@gmail.com]">
+                    <a className="nav-icon" rel="noopener noreferrer" href="mailto: [tonywible@gmail.com]">
                         <i className="fas fa-envelope"></i>
                     </a>
                             

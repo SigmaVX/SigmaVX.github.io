@@ -15,8 +15,8 @@ const Portfolio = (props) =>{
            
 
                 <div className="project-grid-child project-text" id="project1">
-                    <a href="https://gameroster.com/" target="_blank"><h2>Game Roster</h2></a>
-                    <a className="gitIcons bitBucket text-center" target="_balnk" href="#">
+                    <a rel="noopener noreferrer" href="https://gameroster.com/" target="_blank"><h2>Game Roster</h2></a>
+                    <a className="gitIcons bitBucket text-center" target="_balnk" href="">
                         <i className="fab fa-bitbucket"></i>
                         (Code In Private Repo)
                     </a>
@@ -24,7 +24,7 @@ const Portfolio = (props) =>{
                     </p>
                 </div>
                 <div className="project-grid-child project-img-wrapper">
-                    <a href="https://gameroster.com" target="_blank">
+                    <a rel="noopener noreferrer" href="https://gameroster.com" target="_blank">
                         <img className="project-img" src="./images/game-roster.png" alt="Game Roster Screenshot"/>
                     </a>
                 </div>
@@ -33,16 +33,16 @@ const Portfolio = (props) =>{
             
             
                 <div className="project-grid-child project-img-wrapper">
-                    <a href="https://itunes.apple.com/us/app/game-roster/id1084852919?ls=1&mt=8" target="_blank">
+                    <a rel="noopener noreferrer" href="https://itunes.apple.com/us/app/game-roster/id1084852919?ls=1&mt=8" target="_blank">
                         <img className="project-img" src="./images/mobile.png" alt="App Store Screenshot"/>
                     </a>
 
                 </div>    
                 <div className="project-grid-child project-text" id="project2">
-                    <a href="https://itunes.apple.com/us/app/game-roster/id1084852919?ls=1&mt=8" target="_blank">
+                    <a rel="noopener noreferrer" href="https://itunes.apple.com/us/app/game-roster/id1084852919?ls=1&mt=8" target="_blank">
                         <h2>Mobile Apps</h2>
                     </a>
-                    <a className="gitIcons bitBucket text-center" target="_balnk" href="#">
+                    <a className="gitIcons bitBucket text-center" target="_balnk" href="">
                         <i className="fab fa-bitbucket"></i>
                         (Code In Private Repo)
                     </a>
@@ -53,7 +53,7 @@ const Portfolio = (props) =>{
     
 
                 <div className="project-grid-child project-text" id="project4">
-                    <a href="https://blooming-shore-12371.herokuapp.com/" target="_blank">
+                    <a rel="noopener noreferrer" href="https://blooming-shore-12371.herokuapp.com/" target="_blank">
                         <h2>Agile Flow</h2>
                     </a>
                     <a className="gitIcons text-center" target="_balnk" href="https://github.com/SigmaVX/Agile-Flow">
@@ -64,7 +64,7 @@ const Portfolio = (props) =>{
                     </p>
                 </div>
                 <div className="project-grid-child project-img-wrapper">
-                    <a href="https://blooming-shore-12371.herokuapp.com/" target="_blank">
+                    <a rel="noopener noreferrer" href="https://blooming-shore-12371.herokuapp.com/" target="_blank">
                         <img className="project-img" src="./images/agile-flow.png" alt="Agile Flow App Screenshot"/>
                     </a>
                 </div>        
@@ -72,12 +72,12 @@ const Portfolio = (props) =>{
 
               
                 <div className="project-grid-child project-img-wrapper">
-                    <a href="https://sigmavx.github.io/Cortex/" target="_blank">
+                    <a rel="noopener noreferrer" href="https://sigmavx.github.io/Cortex/" target="_blank">
                         <img className="project-img" src="./images/cortex.png" alt="Cortex App Screenshot"/>
                     </a>
                 </div>    
                 <div className="project-grid-child project-text" id="project4">
-                    <a href="https://sigmavx.github.io/Cortex/" target="_blank">
+                    <a rel="noopener noreferrer" href="https://sigmavx.github.io/Cortex/" target="_blank">
                         <h2>Cortex - React JS Memory App</h2>
                     </a>
                     <a className="gitIcons text-center" target="_balnk" href="https://github.com/SigmaVX/Cortex">
@@ -91,10 +91,10 @@ const Portfolio = (props) =>{
 
      
                 <div className="project-grid-child project-text" id="project3">
-                    <a href="https://sigmavx.github.io/Trivia-Game/" target="_blank">
+                    <a rel="noopener noreferrer" href="https://sigmavx.github.io/Trivia-Game/" target="_blank">
                         <h2>Toon Triva</h2>
                     </a>
-                    <a className="gitIcons text-center" target="_balnk" href="https://github.com/SigmaVX/Trivia-Game">
+                    <a rel="noopener noreferrer" className="gitIcons text-center" target="_balnk" href="https://github.com/SigmaVX/Trivia-Game">
                         <i className="align-middle fab fa-github"></i>
                         (See The Code)
                     </a>
@@ -102,7 +102,7 @@ const Portfolio = (props) =>{
                     </p>
                 </div>
                 <div className="project-grid-child project-img-wrapper">
-                    <a href="https://sigmavx.github.io/Trivia-Game/" target="_blank">
+                    <a rel="noopener noreferrer" href="https://sigmavx.github.io/Trivia-Game/" target="_blank">
                         <img className="project-img" src="./images/toon.png" alt="Trivia Game Screenshot"/>
                     </a>
                 </div>
@@ -111,15 +111,15 @@ const Portfolio = (props) =>{
 
            
                 <div className="project-grid-child project-img-wrapper">
-                    <a href="https://sigmavx.github.io/GIPHY-API/" target="_blank">
+                    <a rel="noopener noreferrer" href="https://sigmavx.github.io/GIPHY-API/" target="_blank">
                         <img className="project-img" src="./images/giphy.png" alt="GIPHY API Screenshot"/>
                     </a>
                 </div>    
                 <div className="project-grid-child project-text" id="project4">
-                    <a href="https://sigmavx.github.io/GIPHY-API/" target="_blank">
+                    <a rel="noopener noreferrer" href="https://sigmavx.github.io/GIPHY-API/" target="_blank">
                         <h2>GIPHY API</h2>
                     </a>
-                    <a className="gitIcons text-center" target="_balnk" href="https://github.com/SigmaVX/GIPHY-API">
+                    <a rel="noopener noreferrer" className="gitIcons text-center" target="_balnk" href="https://github.com/SigmaVX/GIPHY-API">
                         <i className="align-middle fab fa-github"></i>
                         (See The Code)
                     </a>
@@ -131,10 +131,10 @@ const Portfolio = (props) =>{
             
             
                 <div className="project-grid-child project-text" id="project3">
-                    <a href="https://sigmavx.github.io/RPG-Game/" target="_blank">
+                    <a rel="noopener noreferrer" href="https://sigmavx.github.io/RPG-Game/" target="_blank">
                         <h2>Food Fight RPG Game</h2>
                     </a>
-                    <a className="gitIcons text-center" target="_balnk" href="https://github.com/SigmaVX/RPG-Game">
+                    <a rel="noopener noreferrer" className="gitIcons text-center" target="_balnk" href="https://github.com/SigmaVX/RPG-Game">
                         <i className="fab fa-github"></i>
                         (See The Code)
                     </a>
@@ -142,7 +142,7 @@ const Portfolio = (props) =>{
                     </p>
                 </div>
                 <div className="project-grid-child project-img-wrapper">
-                    <a href="https://sigmavx.github.io/RPG-Game/" target="_blank">
+                    <a rel="noopener noreferrer" href="https://sigmavx.github.io/RPG-Game/" target="_blank">
                         <img className="project-img" src="./images/rpg-game.png" alt="RPG Game Screenshot"/>
                     </a>
                 </div>
@@ -151,12 +151,12 @@ const Portfolio = (props) =>{
             
            
                 <div className="project-grid-child project-img-wrapper">
-                    <a href="https://sigmavx.github.io/Garyvee-Hangman/" target="_blank">
+                    <a rel="noopener noreferrer" href="https://sigmavx.github.io/Garyvee-Hangman/" target="_blank">
                         <img className="project-img" src="./images/garyvee.png" alt="Hangman Game Screenshot"/>
                     </a>
                 </div>    
                 <div className="project-grid-child project-text" id="project4">
-                    <a href="https://sigmavx.github.io/Garyvee-Hangman/" target="_blank">
+                    <a rel="noopener noreferrer" href="https://sigmavx.github.io/Garyvee-Hangman/" target="_blank">
                         <h2>GaryVee Motivational App</h2>
                     </a>
                     <a className="gitIcons text-center" target="_balnk" href="https://github.com/SigmaVX/Garyvee-Hangman">
@@ -171,7 +171,7 @@ const Portfolio = (props) =>{
             
             
                 <div className="project-grid-child project-text" id="project4">
-                    <a href="https://sigmavx.github.io/Train-Scheduler/" target="_blank">
+                    <a rel="noopener noreferrer" href="https://sigmavx.github.io/Train-Scheduler/" target="_blank">
                         <h2>Firebase Train Scheduler</h2>
                     </a>
                     <a className="gitIcons text-center" target="_balnk" href="https://github.com/SigmaVX/Train-Scheduler">
@@ -182,7 +182,7 @@ const Portfolio = (props) =>{
                     </p>
                 </div>
                 <div className="project-grid-child project-img-wrapper">
-                    <a href="https://sigmavx.github.io/Train-Scheduler/" target="_blank">
+                    <a rel="noopener noreferrer" href="https://sigmavx.github.io/Train-Scheduler/" target="_blank">
                         <img className="project-img" src="./images/train.png" alt="Train Scheduler Screenshot"/>
                     </a>
                 </div>        
@@ -190,12 +190,12 @@ const Portfolio = (props) =>{
     
                
                 <div className="project-grid-child project-img-wrapper">
-                    <a href="https://fast-sands-67900.herokuapp.com/" target="_blank">
+                    <a rel="noopener noreferrer" href="https://fast-sands-67900.herokuapp.com/" target="_blank">
                         <img className="project-img" src="./images/opine.png" alt="O-pine App Screenshot"/>
                     </a>
                 </div>    
                 <div className="project-grid-child project-text" id="project4">
-                    <a href="https://fast-sands-67900.herokuapp.com/" target="_blank">
+                    <a rel="noopener noreferrer" href="https://fast-sands-67900.herokuapp.com/" target="_blank">
                         <h2>O-Pine eSports News Scraper</h2>
                     </a>
                     <a className="gitIcons text-center" target="_balnk" href="https://github.com/SigmaVX/O-Pine">
@@ -209,7 +209,7 @@ const Portfolio = (props) =>{
            
             
                 <div className="project-grid-child project-text" id="project4">
-                    <a href="https://mighty-citadel-95863.herokuapp.com/" target="_blank">
+                    <a rel="noopener noreferrer" href="https://mighty-citadel-95863.herokuapp.com/" target="_blank">
                         <h2>Chronos Food Ticketing App</h2>
                     </a>
                     <a className="gitIcons text-center" target="_balnk" href="https://github.com/SigmaVX/Restaurant-Ticketing">
@@ -220,7 +220,7 @@ const Portfolio = (props) =>{
                     </p>
                 </div>
                 <div className="project-grid-child project-img-wrapper">
-                    <a href="https://mighty-citadel-95863.herokuapp.com/" target="_blank">
+                    <a rel="noopener noreferrer" href="https://mighty-citadel-95863.herokuapp.com/" target="_blank">
                         <img className="project-img" src="./images/chronos.png" alt="SQL Database App Screenshot"/>
                     </a>
                 </div>        
@@ -228,12 +228,12 @@ const Portfolio = (props) =>{
                        
    
                 <div className="project-grid-child project-img-wrapper">
-                    <a href="https://desolate-ravine-48937.herokuapp.com/" target="_blank">
+                    <a rel="noopener noreferrer" href="https://desolate-ravine-48937.herokuapp.com/" target="_blank">
                         <img className="project-img" src="./images/team-finder.png" alt="Team Finder App Screenshot"/>
                     </a>
                 </div>    
                 <div className="project-grid-child project-text" id="project4">
-                    <a href="https://desolate-ravine-48937.herokuapp.com/" target="_blank">
+                    <a rel="noopener noreferrer" href="https://desolate-ravine-48937.herokuapp.com/" target="_blank">
                         <h2>Team Finder API & Routes</h2>
                     </a>
                     <a className="gitIcons text-center" target="_balnk" href="https://github.com/SigmaVX/Team-Finder">
@@ -247,10 +247,10 @@ const Portfolio = (props) =>{
 
             
                 <div className="project-grid-child project-text" id="project4">
-                    <a href="https://github.com/SigmaVX/G-BAY" target="_blank">
+                    <a rel="noopener noreferrer" href="https://github.com/SigmaVX/G-BAY" target="_blank">
                         <h2>SQL Store Database App</h2>
                     </a>
-                    <a className="gitIcons text-center" target="_balnk" href="https://github.com/SigmaVX/G-BAY">
+                    <a rel="noopener noreferrer" className="gitIcons text-center" target="_balnk" href="https://github.com/SigmaVX/G-BAY">
                         <i className="align-middle fab fa-github"></i>
                         (See The Code)
                     </a>
@@ -258,7 +258,7 @@ const Portfolio = (props) =>{
                     </p>
                 </div>
                 <div className="project-grid-child project-img-wrapper">
-                    <a href="https://youtu.be/mkKY-PP0d9E" target="_blank">
+                    <a rel="noopener noreferrer" href="https://youtu.be/mkKY-PP0d9E" target="_blank">
                         <img className="project-img" src="./images/gbay.png" alt="SQL Database App Screenshot"/>
                     </a>
                 </div>
@@ -266,15 +266,15 @@ const Portfolio = (props) =>{
 
 
                 <div className="project-grid-child project-img-wrapper">
-                    <a href="https://youtu.be/SQHHRqTVohM" target="_blank">
+                    <a rel="noopener noreferrer" href="https://youtu.be/SQHHRqTVohM" target="_blank">
                         <img className="project-img" src="./images/lardac.png" alt="LARDAC Node JS Screenshot"/>
                     </a>
                 </div>    
                 <div className="project-grid-child project-text" id="project4">
-                    <a href="https://github.com/SigmaVX/LARDAC" target="_blank">
+                    <a rel="noopener noreferrer" href="https://github.com/SigmaVX/LARDAC" target="_blank">
                         <h2>Node JS APIs</h2>
                     </a>
-                    <a className="gitIcons text-center" target="_balnk" href="https://github.com/SigmaVX/LARDAC">
+                    <a rel="noopener noreferrer" className="gitIcons text-center" target="_balnk" href="https://github.com/SigmaVX/LARDAC">
                         <i className="align-middle fab fa-github"></i>
                         (See The Code)
                     </a>
