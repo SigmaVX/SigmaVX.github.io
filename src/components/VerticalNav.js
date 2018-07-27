@@ -19,7 +19,7 @@ class VerticalNav extends Component {
   render() {
     return  (
       <Menu
-      width={ '170px' }
+      width={ '200px' }
       customBurgerIcon={ <img id="burger-icon" src="images/Sigma.png" /> } 
       >
         <nav className="side-nav">
