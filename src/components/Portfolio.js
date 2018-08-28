@@ -53,7 +53,7 @@ const Portfolio = (props) =>{
     
 
                 <div className="project-grid-child project-text" id="project4">
-                    <a rel="noopener noreferrer" href="https://blooming-shore-12371.herokuapp.com/" target="_blank">
+                    <a rel="noopener noreferrer" href="https://agile-flow.herokuapp.com/" target="_blank">
                         <h2>Agile Flow</h2>
                     </a>
                     <a className="gitIcons text-center" target="_balnk" href="https://github.com/SigmaVX/Agile-Flow">
@@ -64,7 +64,7 @@ const Portfolio = (props) =>{
                     </p>
                 </div>
                 <div className="project-grid-child project-img-wrapper">
-                    <a rel="noopener noreferrer" href="https://blooming-shore-12371.herokuapp.com/" target="_blank">
+                    <a rel="noopener noreferrer" href="https://agile-flow.herokuapp.com/" target="_blank">
                         <img className="project-img" src="./images/agile-flow.png" alt="Agile Flow App Screenshot"/>
                     </a>
                 </div>        
@@ -190,12 +190,12 @@ const Portfolio = (props) =>{
     
                
                 <div className="project-grid-child project-img-wrapper">
-                    <a rel="noopener noreferrer" href="https://fast-sands-67900.herokuapp.com/" target="_blank">
+                    <a rel="noopener noreferrer" href="https://o-pine.herokuapp.com/" target="_blank">
                         <img className="project-img" src="./images/opine.png" alt="O-pine App Screenshot"/>
                     </a>
                 </div>    
                 <div className="project-grid-child project-text" id="project4">
-                    <a rel="noopener noreferrer" href="https://fast-sands-67900.herokuapp.com/" target="_blank">
+                    <a rel="noopener noreferrer" href="https://o-pine.herokuapp.com/" target="_blank">
                         <h2>O-Pine eSports News Scraper</h2>
                     </a>
                     <a className="gitIcons text-center" target="_balnk" href="https://github.com/SigmaVX/O-Pine">
@@ -209,7 +209,7 @@ const Portfolio = (props) =>{
            
             
                 <div className="project-grid-child project-text" id="project4">
-                    <a rel="noopener noreferrer" href="https://mighty-citadel-95863.herokuapp.com/" target="_blank">
+                    <a rel="noopener noreferrer" href="https://chronos-food-ticketing.herokuapp.com/" target="_blank">
                         <h2>Chronos Food Ticketing App</h2>
                     </a>
                     <a className="gitIcons text-center" target="_balnk" href="https://github.com/SigmaVX/Restaurant-Ticketing">
@@ -220,7 +220,7 @@ const Portfolio = (props) =>{
                     </p>
                 </div>
                 <div className="project-grid-child project-img-wrapper">
-                    <a rel="noopener noreferrer" href="https://mighty-citadel-95863.herokuapp.com/" target="_blank">
+                    <a rel="noopener noreferrer" href="https://chronos-food-ticketing.herokuapp.com/" target="_blank">
                         <img className="project-img" src="./images/chronos.png" alt="SQL Database App Screenshot"/>
                     </a>
                 </div>        
@@ -228,12 +228,12 @@ const Portfolio = (props) =>{
                        
    
                 <div className="project-grid-child project-img-wrapper">
-                    <a rel="noopener noreferrer" href="https://desolate-ravine-48937.herokuapp.com/" target="_blank">
+                    <a rel="noopener noreferrer" href="https://team-finder-rutgers.herokuapp.com/" target="_blank">
                         <img className="project-img" src="./images/team-finder.png" alt="Team Finder App Screenshot"/>
                     </a>
                 </div>    
                 <div className="project-grid-child project-text" id="project4">
-                    <a rel="noopener noreferrer" href="https://desolate-ravine-48937.herokuapp.com/" target="_blank">
+                    <a rel="noopener noreferrer" href="https://team-finder-rutgers.herokuapp.com/" target="_blank">
                         <h2>Team Finder API & Routes</h2>
                     </a>
                     <a className="gitIcons text-center" target="_balnk" href="https://github.com/SigmaVX/Team-Finder">
