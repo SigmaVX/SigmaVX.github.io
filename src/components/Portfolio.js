@@ -16,7 +16,7 @@ const Portfolio = (props) =>{
 
                 <div className="project-grid-child project-text" id="project1">
                     <a rel="noopener noreferrer" href="https://gameroster.com/" target="_blank"><h2>Game Roster</h2></a>
-                    <a className="gitIcons bitBucket text-center" target="_balnk" href="">
+                    <a className="gitIcons bitBucket text-center" target="" href="">
                         <i className="fab fa-bitbucket"></i>
                         (Code In Private Repo)
                     </a>
@@ -42,7 +42,7 @@ const Portfolio = (props) =>{
                     <a rel="noopener noreferrer" href="https://itunes.apple.com/us/app/game-roster/id1084852919?ls=1&mt=8" target="_blank">
                         <h2>Mobile Apps</h2>
                     </a>
-                    <a className="gitIcons bitBucket text-center" target="_balnk" href="">
+                    <a className="gitIcons bitBucket text-center" target="" href="">
                         <i className="fab fa-bitbucket"></i>
                         (Code In Private Repo)
                     </a>
