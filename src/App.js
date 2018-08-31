@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import Navbar from "./components/Navbar";
-import {BrowserRouter as Router, Route, Switch, Redirect} from "react-router-dom";
+import {BrowserRouter as Router} from "react-router-dom";
 import Home from './containers/Home';
 
 class App extends Component {

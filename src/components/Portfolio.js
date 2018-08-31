@@ -51,6 +51,42 @@ const Portfolio = (props) =>{
                 </div>        
            
     
+                <div className="project-grid-child project-text" id="project4">
+                    <a rel="noopener noreferrer" href="http://www.tilt.gg/" target="_blank">
+                        <h2>Tilt - Full Stack MERN</h2>
+                    </a>
+                    <div className="gitIcons bitBucket text-center">
+                        <i className="fab fa-bitbucket"></i>
+                        (Code In Private Repo)
+                    </div>
+                    <p>Find, report, and track online cheaters.  This full stack application is built with Mongo DB, Express, React, and Node JS.  It utilizes data visualization libraries to track cheat tends, Mongoose as an Object Document Mapper, and over 20 other libraries. It also includes a YouTube API, a custom email verification system, and conditional routing.  
+                    </p>
+                </div>
+                <div className="project-grid-child project-img-wrapper">
+                    <a rel="noopener noreferrer" href="http://www.tilt.gg/" target="_blank">
+                        <img className="project-img" src="./images/tilt.png" alt="Tilt App Screenshot"/>
+                    </a>
+                </div>  
+                
+              
+                <div className="project-grid-child project-img-wrapper">
+                    <a rel="noopener noreferrer" href="https://nyt-react-rutgers.herokuapp.com/" target="_blank">
+                        <img className="project-img" src="./images/nyt.png" alt="NYT App Screenshot"/>
+                    </a>
+                </div>    
+                <div className="project-grid-child project-text" id="project4">
+                    <a rel="noopener noreferrer" href="https://nyt-react-rutgers.herokuapp.com/" target="_blank">
+                        <h2>New York Times Search & Save - React App</h2>
+                    </a>
+                    <a className="gitIcons text-center" target="_balnk" href="https://github.com/SigmaVX/NYT-Reader">
+                        <i className="align-middle fab fa-github"></i>
+                        (See The Code)
+                    </a>
+                    <p>
+                    Find and save articles from the New York Times using React and Mongo DB.  This full stack MERN app untilzies an MVC setup with an ODM to simplify CRUD operations.  
+                    </p>
+                </div>
+
 
                 <div className="project-grid-child project-text" id="project4">
                     <a rel="noopener noreferrer" href="https://agile-flow.herokuapp.com/" target="_blank">
