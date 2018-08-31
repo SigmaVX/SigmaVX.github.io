@@ -9,7 +9,7 @@ const About = (props) =>{
 
                 <h2 className="about-title">Me In A Nutshell</h2>
 
-                <img className="about-img" src="./images/tony.jpg" alt="Tony Wible"/>
+                <img className="about-img" src="./images/tony.JPG" alt="Tony Wible"/>
                 
                 <p className="about-text" id="about-p1">
                     Top analyst, leader, and full stack developer that loves to apply my aptitude for strategic analysis towards building products that boost growth and unlock new opportunities.

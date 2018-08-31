@@ -16,10 +16,10 @@ const Portfolio = (props) =>{
 
                 <div className="project-grid-child project-text" id="project1">
                     <a rel="noopener noreferrer" href="https://gameroster.com/" target="_blank"><h2>Game Roster</h2></a>
-                    <a className="gitIcons bitBucket text-center" target="" href="">
+                    <div className="gitIcons bitBucket text-center">
                         <i className="fab fa-bitbucket"></i>
                         (Code In Private Repo)
-                    </a>
+                    </div>
                     <p>Game Roster helps thousands of gamers discover, organize, and build online gaming communities.  The cross-platform application use algorithms to help users find ideal teams, players, and games.  It includes dozens of features, and has been a global effort involving multiple designers, developers, and engineers that showcase Agile project management, UI/UX, analytics, and a broad range of backend technologies.
                     </p>
                 </div>
@@ -42,10 +42,10 @@ const Portfolio = (props) =>{
                     <a rel="noopener noreferrer" href="https://itunes.apple.com/us/app/game-roster/id1084852919?ls=1&mt=8" target="_blank">
                         <h2>Mobile Apps</h2>
                     </a>
-                    <a className="gitIcons bitBucket text-center" target="" href="">
+                    <div className="gitIcons bitBucket text-center">
                         <i className="fab fa-bitbucket"></i>
                         (Code In Private Repo)
-                    </a>
+                    </div>
                     <p>The Game Roster messaging app keeps you connected with your clans and events with push notifications for messages, event posts, clan applications, and game event roster updates. The iOS and Android apps sync with Discord and our Website to showcase cross-platform development. 
                     </p>
                 </div>        
