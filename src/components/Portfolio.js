@@ -25,7 +25,7 @@ const Portfolio = (props) =>{
                 </div>
                 <div className="project-grid-child project-img-wrapper">
                     <a rel="noopener noreferrer" href="https://gameroster.com" target="_blank">
-                        <img className="project-img" src="./images/game-roster.png" alt="Game Roster Screenshot"/>
+                        <img className="project-img" src="./images/game_roster.jpg" alt="Game Roster Screenshot"/>
                     </a>
                 </div>
          
@@ -34,7 +34,7 @@ const Portfolio = (props) =>{
             
                 <div className="project-grid-child project-img-wrapper">
                     <a rel="noopener noreferrer" href="https://itunes.apple.com/us/app/game-roster/id1084852919?ls=1&mt=8" target="_blank">
-                        <img className="project-img" src="./images/mobile.png" alt="App Store Screenshot"/>
+                        <img className="project-img" src="./images/mobile.jpg" alt="App Store Screenshot"/>
                     </a>
 
                 </div>    
@@ -64,14 +64,14 @@ const Portfolio = (props) =>{
                 </div>
                 <div className="project-grid-child project-img-wrapper">
                     <a rel="noopener noreferrer" href="http://www.tilt.gg/" target="_blank">
-                        <img className="project-img" src="./images/tilt.png" alt="Tilt App Screenshot"/>
+                        <img className="project-img" src="./images/tilt.jpg" alt="Tilt App Screenshot"/>
                     </a>
                 </div>  
                 
               
                 <div className="project-grid-child project-img-wrapper">
                     <a rel="noopener noreferrer" href="https://nyt-react-rutgers.herokuapp.com/" target="_blank">
-                        <img className="project-img" src="./images/nyt.png" alt="NYT App Screenshot"/>
+                        <img className="project-img" src="./images/nyt.jpg" alt="NYT App Screenshot"/>
                     </a>
                 </div>    
                 <div className="project-grid-child project-text" id="project4">
@@ -101,7 +101,7 @@ const Portfolio = (props) =>{
                 </div>
                 <div className="project-grid-child project-img-wrapper">
                     <a rel="noopener noreferrer" href="https://agile-flow.herokuapp.com/" target="_blank">
-                        <img className="project-img" src="./images/agile-flow.png" alt="Agile Flow App Screenshot"/>
+                        <img className="project-img" src="./images/agile_flow.jpg" alt="Agile Flow App Screenshot"/>
                     </a>
                 </div>        
         
@@ -109,7 +109,7 @@ const Portfolio = (props) =>{
               
                 <div className="project-grid-child project-img-wrapper">
                     <a rel="noopener noreferrer" href="https://sigmavx.github.io/Cortex/" target="_blank">
-                        <img className="project-img" src="./images/cortex.png" alt="Cortex App Screenshot"/>
+                        <img className="project-img" src="./images/cortex.jpg" alt="Cortex App Screenshot"/>
                     </a>
                 </div>    
                 <div className="project-grid-child project-text" id="project4">
@@ -139,7 +139,7 @@ const Portfolio = (props) =>{
                 </div>
                 <div className="project-grid-child project-img-wrapper">
                     <a rel="noopener noreferrer" href="https://sigmavx.github.io/Trivia-Game/" target="_blank">
-                        <img className="project-img" src="./images/toon.png" alt="Trivia Game Screenshot"/>
+                        <img className="project-img" src="./images/toon.jpg" alt="Trivia Game Screenshot"/>
                     </a>
                 </div>
            
@@ -148,7 +148,7 @@ const Portfolio = (props) =>{
            
                 <div className="project-grid-child project-img-wrapper">
                     <a rel="noopener noreferrer" href="https://sigmavx.github.io/GIPHY-API/" target="_blank">
-                        <img className="project-img" src="./images/giphy.png" alt="GIPHY API Screenshot"/>
+                        <img className="project-img" src="./images/giphy.jpg" alt="GIPHY API Screenshot"/>
                     </a>
                 </div>    
                 <div className="project-grid-child project-text" id="project4">
@@ -179,7 +179,7 @@ const Portfolio = (props) =>{
                 </div>
                 <div className="project-grid-child project-img-wrapper">
                     <a rel="noopener noreferrer" href="https://sigmavx.github.io/RPG-Game/" target="_blank">
-                        <img className="project-img" src="./images/rpg-game.png" alt="RPG Game Screenshot"/>
+                        <img className="project-img" src="./images/rpg_game.jpg" alt="RPG Game Screenshot"/>
                     </a>
                 </div>
                 
@@ -188,7 +188,7 @@ const Portfolio = (props) =>{
            
                 <div className="project-grid-child project-img-wrapper">
                     <a rel="noopener noreferrer" href="https://sigmavx.github.io/Garyvee-Hangman/" target="_blank">
-                        <img className="project-img" src="./images/garyvee.png" alt="Hangman Game Screenshot"/>
+                        <img className="project-img" src="./images/garyvee.jpg" alt="Hangman Game Screenshot"/>
                     </a>
                 </div>    
                 <div className="project-grid-child project-text" id="project4">
@@ -219,7 +219,7 @@ const Portfolio = (props) =>{
                 </div>
                 <div className="project-grid-child project-img-wrapper">
                     <a rel="noopener noreferrer" href="https://sigmavx.github.io/Train-Scheduler/" target="_blank">
-                        <img className="project-img" src="./images/train.png" alt="Train Scheduler Screenshot"/>
+                        <img className="project-img" src="./images/train.jpg" alt="Train Scheduler Screenshot"/>
                     </a>
                 </div>        
           
@@ -227,7 +227,7 @@ const Portfolio = (props) =>{
                
                 <div className="project-grid-child project-img-wrapper">
                     <a rel="noopener noreferrer" href="https://o-pine.herokuapp.com/" target="_blank">
-                        <img className="project-img" src="./images/opine.png" alt="O-pine App Screenshot"/>
+                        <img className="project-img" src="./images/opine.jpg" alt="O-pine App Screenshot"/>
                     </a>
                 </div>    
                 <div className="project-grid-child project-text" id="project4">
@@ -257,7 +257,7 @@ const Portfolio = (props) =>{
                 </div>
                 <div className="project-grid-child project-img-wrapper">
                     <a rel="noopener noreferrer" href="https://chronos-food-ticketing.herokuapp.com/" target="_blank">
-                        <img className="project-img" src="./images/chronos.png" alt="SQL Database App Screenshot"/>
+                        <img className="project-img" src="./images/chronos.jpg" alt="SQL Database App Screenshot"/>
                     </a>
                 </div>        
            
@@ -265,7 +265,7 @@ const Portfolio = (props) =>{
    
                 <div className="project-grid-child project-img-wrapper">
                     <a rel="noopener noreferrer" href="https://team-finder-rutgers.herokuapp.com/" target="_blank">
-                        <img className="project-img" src="./images/team-finder.png" alt="Team Finder App Screenshot"/>
+                        <img className="project-img" src="./images/team_finder.jpg" alt="Team Finder App Screenshot"/>
                     </a>
                 </div>    
                 <div className="project-grid-child project-text" id="project4">
@@ -295,7 +295,7 @@ const Portfolio = (props) =>{
                 </div>
                 <div className="project-grid-child project-img-wrapper">
                     <a rel="noopener noreferrer" href="https://youtu.be/mkKY-PP0d9E" target="_blank">
-                        <img className="project-img" src="./images/gbay.png" alt="SQL Database App Screenshot"/>
+                        <img className="project-img" src="./images/gbay.jpg" alt="SQL Database App Screenshot"/>
                     </a>
                 </div>
 
@@ -303,7 +303,7 @@ const Portfolio = (props) =>{
 
                 <div className="project-grid-child project-img-wrapper">
                     <a rel="noopener noreferrer" href="https://youtu.be/SQHHRqTVohM" target="_blank">
-                        <img className="project-img" src="./images/lardac.png" alt="LARDAC Node JS Screenshot"/>
+                        <img className="project-img" src="./images/lardac.jpg" alt="LARDAC Node JS Screenshot"/>
                     </a>
                 </div>    
                 <div className="project-grid-child project-text" id="project4">
