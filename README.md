@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+## Quick Deployment Instructions
+Because this app is being deployed on the primary SimgaVX git hub page URL it cannot be synced into master as master is not allowed to be merged into these pages as per github.  Treat "gh-pages" as the master branch with push and pull requests. To deploy updates you should update this branch with "git push origin gh-pages" and then run "npm run deploy".
+
+
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
