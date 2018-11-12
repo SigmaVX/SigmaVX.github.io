@@ -1,4 +1,5 @@
 import React from "react";
+import Particles from 'react-particles-js';
 
 const Portfolio = (props) =>{
 
@@ -10,10 +11,127 @@ const Portfolio = (props) =>{
             <h2>Portfolio</h2>
         </div>
     
-        <div className="container project-grid-wrapper">
+        <div className="particle-container">
             
-           
+            <Particles 
+                className="particle-background"
+                params={
+                    {
+                        "particles": {
+                            "number": {
+                            "value": 100,
+                            "density": {
+                                "enable": false,
+                                "value_area": 0
+                            }
+                            },
+                            "color": {
+                            "value": "#503a78"
+                            },
+                            "shape": {
+                            "type": "circle",
+                            "stroke": {
+                                "width": 0,
+                                "color": "#000000"
+                            },
+                            "polygon": {
+                                "nb_sides": 5
+                            },
+                            "image": {
+                                "src": "",
+                                "width": 400,
+                                "height": 370
+                            }
+                            },
+                            "opacity": {
+                            "value": 0.5,
+                            "random": true,
+                            "anim": {
+                                "enable": false,
+                                "speed": 1,
+                                "opacity_min": 0.1,
+                                "sync": false
+                            }
+                            },
+                            "size": {
+                            "value": 10,
+                            "random": true,
+                            "anim": {
+                                "enable": false,
+                                "speed": 40,
+                                "size_min": 0.1,
+                                "sync": false
+                            }
+                            },
+                            "line_linked": {
+                            "enable": false,
+                            "distance": 500,
+                            "color": "#ffffff",
+                            "opacity": 0.4,
+                            "width": 2
+                            },
+                            "move": {
+                            "enable": true,
+                            "speed": 6,
+                            "direction": "bottom",
+                            "random": false,
+                            "straight": false,
+                            "out_mode": "out",
+                            "bounce": false,
+                            "attract": {
+                                "enable": false,
+                                "rotateX": 600,
+                                "rotateY": 1200
+                            }
+                            }
+                        },
+                        "interactivity": {
+                            "detect_on": "canvas",
+                            "events": {
+                            "onhover": {
+                                "enable": true,
+                                "mode": "bubble"
+                            },
+                            "onclick": {
+                                "enable": true,
+                                "mode": "repulse"
+                            },
+                            "resize": true
+                            },
+                            "modes": {
+                            "grab": {
+                                "distance": 400,
+                                "line_linked": {
+                                "opacity": 0.5
+                                }
+                            },
+                            "bubble": {
+                                "distance": 400,
+                                "size": 4,
+                                "duration": 0.3,
+                                "opacity": 1,
+                                "speed": 3
+                            },
+                            "repulse": {
+                                "distance": 200,
+                                "duration": 0.4
+                            },
+                            "push": {
+                                "particles_nb": 4
+                            },
+                            "remove": {
+                                "particles_nb": 2
+                            }
+                            }
+                        },
+                    "retina_detect": true
+                    }
+                }
+            />
 
+
+            <div className="container project-grid-wrapper">
+            
                 <div className="project-grid-child project-text" id="project1">
                     <a rel="noopener noreferrer" href="https://gameroster.com/" target="_blank"><h2>Game Roster</h2></a>
                     <div className="gitIcons bitBucket text-center">
@@ -25,16 +143,16 @@ const Portfolio = (props) =>{
                 </div>
                 <div className="project-grid-child project-img-wrapper">
                     <a rel="noopener noreferrer" href="https://gameroster.com" target="_blank">
-                        <img className="project-img" src="./images/game_roster.jpg" alt="Game Roster Screenshot"/>
+                        <img className="project-img" src="/images/game_roster.jpg" alt="Game Roster Screenshot"/>
                     </a>
                 </div>
-         
-    
-            
-            
+
+
+
+
                 <div className="project-grid-child project-img-wrapper">
                     <a rel="noopener noreferrer" href="https://itunes.apple.com/us/app/game-roster/id1084852919?ls=1&mt=8" target="_blank">
-                        <img className="project-img" src="./images/mobile.jpg" alt="App Store Screenshot"/>
+                        <img className="project-img" src="/images/mobile.jpg" alt="App Store Screenshot"/>
                     </a>
 
                 </div>    
@@ -49,9 +167,9 @@ const Portfolio = (props) =>{
                     <p>The Game Roster messaging app keeps you connected with your clans and events with push notifications for messages, event posts, clan applications, and game event roster updates. The iOS and Android apps sync with Discord and our Website to showcase cross-platform development. 
                     </p>
                 </div>        
-           
-    
-                <div className="project-grid-child project-text" id="project4">
+
+
+                <div className="project-grid-child project-text" id="project3">
                     <a rel="noopener noreferrer" href="http://www.tilt.gg/" target="_blank">
                         <h2>Tilt - Full Stack MERN</h2>
                     </a>
@@ -68,7 +186,7 @@ const Portfolio = (props) =>{
                     </a>
                 </div>  
                 
-              
+            
                 <div className="project-grid-child project-img-wrapper">
                     <a rel="noopener noreferrer" href="https://nyt-react-rutgers.herokuapp.com/" target="_blank">
                         <img className="project-img" src="./images/nyt.jpg" alt="NYT App Screenshot"/>
@@ -88,7 +206,7 @@ const Portfolio = (props) =>{
                 </div>
 
 
-                <div className="project-grid-child project-text" id="project4">
+                <div className="project-grid-child project-text" id="project5">
                     <a rel="noopener noreferrer" href="https://agile-flow.herokuapp.com/" target="_blank">
                         <h2>Agile Flow</h2>
                     </a>
@@ -104,15 +222,15 @@ const Portfolio = (props) =>{
                         <img className="project-img" src="./images/agile_flow.jpg" alt="Agile Flow App Screenshot"/>
                     </a>
                 </div>        
-        
 
-              
+
+            
                 <div className="project-grid-child project-img-wrapper">
                     <a rel="noopener noreferrer" href="https://sigmavx.github.io/Cortex/" target="_blank">
                         <img className="project-img" src="./images/cortex.jpg" alt="Cortex App Screenshot"/>
                     </a>
                 </div>    
-                <div className="project-grid-child project-text" id="project4">
+                <div className="project-grid-child project-text" id="project6">
                     <a rel="noopener noreferrer" href="https://sigmavx.github.io/Cortex/" target="_blank">
                         <h2>Cortex - React JS Memory App</h2>
                     </a>
@@ -123,10 +241,10 @@ const Portfolio = (props) =>{
                     <p>Cortex is a simple way to test your memory.  Click an image to score a point but avoid clicking any image twice.  This React JS app randomly shuffles all the images after each selection using className component states that are passed between parent and child components. The app also integrates Bootstrap 4, CSS Animations, and React Sticky. 
                     </p>
                 </div>        
-            
 
-     
-                <div className="project-grid-child project-text" id="project3">
+
+
+                <div className="project-grid-child project-text" id="project7">
                     <a rel="noopener noreferrer" href="https://sigmavx.github.io/Trivia-Game/" target="_blank">
                         <h2>Toon Triva</h2>
                     </a>
@@ -142,16 +260,16 @@ const Portfolio = (props) =>{
                         <img className="project-img" src="./images/toon.jpg" alt="Trivia Game Screenshot"/>
                     </a>
                 </div>
-           
-    
 
-           
+
+
+
                 <div className="project-grid-child project-img-wrapper">
                     <a rel="noopener noreferrer" href="https://sigmavx.github.io/GIPHY-API/" target="_blank">
                         <img className="project-img" src="./images/giphy.jpg" alt="GIPHY API Screenshot"/>
                     </a>
                 </div>    
-                <div className="project-grid-child project-text" id="project4">
+                <div className="project-grid-child project-text" id="project8">
                     <a rel="noopener noreferrer" href="https://sigmavx.github.io/GIPHY-API/" target="_blank">
                         <h2>GIPHY API</h2>
                     </a>
@@ -162,11 +280,11 @@ const Portfolio = (props) =>{
                     <p>Looking for a laugh? Search and filter results on GIPHY using the API, JavaScript, jQuery, Bootstrap 4, and my twist on the Seven Deadly Sins. This page is mobile responsive and allows you to query based on predefined terms or create your own searches.  Click a GIF to manipulate the DOM and toggle the animation.
                     </p>
                 </div>        
-           
-            
-            
-            
-                <div className="project-grid-child project-text" id="project3">
+
+
+
+
+                <div className="project-grid-child project-text" id="project9">
                     <a rel="noopener noreferrer" href="https://sigmavx.github.io/RPG-Game/" target="_blank">
                         <h2>Food Fight RPG Game</h2>
                     </a>
@@ -183,15 +301,15 @@ const Portfolio = (props) =>{
                     </a>
                 </div>
                 
-    
-            
-           
+
+
+
                 <div className="project-grid-child project-img-wrapper">
                     <a rel="noopener noreferrer" href="https://sigmavx.github.io/Garyvee-Hangman/" target="_blank">
                         <img className="project-img" src="./images/garyvee.jpg" alt="Hangman Game Screenshot"/>
                     </a>
                 </div>    
-                <div className="project-grid-child project-text" id="project4">
+                <div className="project-grid-child project-text" id="project10">
                     <a rel="noopener noreferrer" href="https://sigmavx.github.io/Garyvee-Hangman/" target="_blank">
                         <h2>GaryVee Motivational App</h2>
                     </a>
@@ -202,11 +320,11 @@ const Portfolio = (props) =>{
                     <p>Get inspired with some GaryVee quotes and sound clips.  Simply select the letters and numbers on your keyboard to reveal random some words of wisdom from GaryVee.  This game uses Bootstrap 4, is mobile responsive, and is built with vanilla JavaScript and jQuery to randomize sounds, word choices, and to manipulate the DOM. Functions are used to streamline the code and to scale up the options (e.g. more random cheers and jeers).
                     </p>
                 </div>        
-            
-            
-            
-            
-                <div className="project-grid-child project-text" id="project4">
+
+
+
+
+                <div className="project-grid-child project-text" id="project11">
                     <a rel="noopener noreferrer" href="https://sigmavx.github.io/Train-Scheduler/" target="_blank">
                         <h2>Firebase Train Scheduler</h2>
                     </a>
@@ -222,15 +340,15 @@ const Portfolio = (props) =>{
                         <img className="project-img" src="./images/train.jpg" alt="Train Scheduler Screenshot"/>
                     </a>
                 </div>        
-          
-    
-               
+
+
+            
                 <div className="project-grid-child project-img-wrapper">
                     <a rel="noopener noreferrer" href="https://o-pine.herokuapp.com/" target="_blank">
                         <img className="project-img" src="./images/opine.jpg" alt="O-pine App Screenshot"/>
                     </a>
                 </div>    
-                <div className="project-grid-child project-text" id="project4">
+                <div className="project-grid-child project-text" id="project12">
                     <a rel="noopener noreferrer" href="https://o-pine.herokuapp.com/" target="_blank">
                         <h2>O-Pine eSports News Scraper</h2>
                     </a>
@@ -241,10 +359,10 @@ const Portfolio = (props) =>{
                     <p>Looking for the latest eSports news in one spot?  This full stack app uses Node.JS, Express, Handlebars, Mongo DB, a Mongoose ODM, and Cheerio to pull and store top news items from The eSports Observer and Kotaku without an API.  Select refresh to screen scrape and update the news items.  Opine on the latest headlines with comments.  This is a no-SQL app that uses Mongoose to apply relational tools and validation.    
                     </p>
                 </div>     
-    
-           
-            
-                <div className="project-grid-child project-text" id="project4">
+
+
+
+                <div className="project-grid-child project-text" id="project13">
                     <a rel="noopener noreferrer" href="https://chronos-food-ticketing.herokuapp.com/" target="_blank">
                         <h2>Chronos Food Ticketing App</h2>
                     </a>
@@ -260,15 +378,15 @@ const Portfolio = (props) =>{
                         <img className="project-img" src="./images/chronos.jpg" alt="SQL Database App Screenshot"/>
                     </a>
                 </div>        
-           
-                       
-   
+
+                    
+
                 <div className="project-grid-child project-img-wrapper">
                     <a rel="noopener noreferrer" href="https://team-finder-rutgers.herokuapp.com/" target="_blank">
                         <img className="project-img" src="./images/team_finder.jpg" alt="Team Finder App Screenshot"/>
                     </a>
                 </div>    
-                <div className="project-grid-child project-text" id="project4">
+                <div className="project-grid-child project-text" id="project14">
                     <a rel="noopener noreferrer" href="https://team-finder-rutgers.herokuapp.com/" target="_blank">
                         <h2>Team Finder API & Routes</h2>
                     </a>
@@ -281,8 +399,8 @@ const Portfolio = (props) =>{
                 </div>   
 
 
-            
-                <div className="project-grid-child project-text" id="project4">
+
+                <div className="project-grid-child project-text" id="project15">
                     <a rel="noopener noreferrer" href="https://github.com/SigmaVX/G-BAY" target="_blank">
                         <h2>SQL Store Database App</h2>
                     </a>
@@ -306,7 +424,7 @@ const Portfolio = (props) =>{
                         <img className="project-img" src="./images/lardac.jpg" alt="LARDAC Node JS Screenshot"/>
                     </a>
                 </div>    
-                <div className="project-grid-child project-text" id="project4">
+                <div className="project-grid-child project-text" id="project16">
                     <a rel="noopener noreferrer" href="https://github.com/SigmaVX/LARDAC" target="_blank">
                         <h2>Node JS APIs</h2>
                     </a>
@@ -316,10 +434,10 @@ const Portfolio = (props) =>{
                     </a>
                     <p>Before the rise of Gotham's HARDAC there was LARDAC, which will fetch Tweets, song tracks from Spotify, and movie info from OMDB.  Need a little help?  LARDAC will recommend a random movie or song for you and keeps track of requests in the log file.  This back-end application is built with JavaScript and Node.js NPM packages. It runs from your terminal and showcases the use of FS Read, FS Write, the "Request" NPM package, the OMDB API, the Spotify API, the Twitter API, and "dotenv" package to protect API keys. It also includes a randomization function that randomly picks unique (i.e. non-duplicate) numbers using a recursive approach.   
                     </p>
-                </div>        
+                </div>       
+
            
-        
-        
+            </div>    
         </div>
     </section>
     
@@ -328,3 +446,5 @@ const Portfolio = (props) =>{
 }
 
 export default Portfolio; 
+
+
