@@ -1,19 +1,49 @@
-import React, { Component } from 'react';
-import {BrowserRouter as Router} from "react-router-dom";
-import Home from './containers/Home';
+import React, { Component, Suspense } from 'react';
+import Layout from "./containers/Layout/Layout";
+import {BrowserRouter, Switch, Route, Redirect} from "react-router-dom";
+import Spinner from './components/UI/Spinner/Spinner';
+
+// React Lazy Loading
+const Home = React.lazy(() => import("./containers/Home/Home"));
+const Portfolio = React.lazy(() => import("./containers/Portfolio/Portfolio"));
+
 
 class App extends Component {
+
   render() {
     return (
-      
-      <div>
-        <Router>
-          <div>
-            <Home/>
-          </div>
-        </Router>
-      </div>
 
+      <BrowserRouter>
+        <Layout>
+          <Switch>
+          
+            {/* React Lazy Load*/}
+              <Route 
+              path="/portfolio" 
+              render={()=>(
+                <Suspense fallback={<Spinner/>} >
+                  <Portfolio {...this.props}/>
+                </Suspense>
+              )}
+            />
+
+            {/* React Lazy Load*/}
+            <Route 
+              path="/" 
+              render={()=>(
+                <Suspense fallback={<Spinner/>} >
+                  <Home {...this.props}/>
+                </Suspense>
+              )}
+            />
+
+            {/* Sends Unknow Routes To Home*/}
+            <Redirect to="/"/>
+            
+          </Switch>
+        </Layout>
+      </BrowserRouter>
+       
     );
   }
 }

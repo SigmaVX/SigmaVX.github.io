@@ -1,0 +1,22 @@
+.Logo{
+    height: 100%;
+    width: 50px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.Logo img{
+    height: 100%;
+    display: block;
+    margin: 0px auto;
+}
+
+
+/* If Device With Is Over 500px */
+@media (max-width: 500px){
+    .Logo, Logo img{
+        display: none;
+    }
+}

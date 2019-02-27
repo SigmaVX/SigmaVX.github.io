@@ -1,0 +1,314 @@
+.back {
+    background: #eeeeee;
+        background: -webkit-linear-gradient(60deg,  #eeeeee 0%,#49417F 100%);
+        background: -o-linear-gradient(45deg,  #eeeeee 0%,#49417F 100%);
+        background: linear-gradient(45deg,  #eeeeee 0%,#49417F 100%);
+    color: #000000;
+    position: absolute;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: stretch;
+    justify-items: stretch;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+}
+
+.back, .front {       
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);  
+        -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+        -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+    text-align: center; 
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    /* align-items: stretch;
+    justify-items: stretch;     */
+}
+  
+.bounce{
+    animation-delay: 3000ms;
+    animation-duration: 3000;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    /* for annimation */
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+ 
+.box .back{
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.box .back .inner{
+    padding: 10px;
+    align-self: center;
+}
+
+.box .front{
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.box .front .inner{
+    font-size: 3rem;
+}
+
+.box1 .front {
+    background-color: #7289DA;
+  }
+
+.box2 .front {    
+    background-color: #242146;
+  }
+
+.box3 .front {
+    background-color: #60567F;
+  }
+  
+.box4 .front {
+    background-color: #6677FF;
+  }
+  
+.box5 .front {
+    background-color: #39207F;
+  }
+  
+.box6 .front {
+    background-color: #43507F;
+  }
+  
+.box7 .front {
+    background-color: #212840;
+  }
+
+.box8 .front {
+    background-color: #855FFF;
+  }
+
+.box:hover .back{
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.box:hover .front{
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.box:hover .front, .box:hover .back{
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.boxLong{
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.boxName{
+    grid-column: span 2;
+    grid-row: span 1;
+    text-align: center;
+    padding-top: 5%;
+    background-color: #49417F;
+    color: #fff;  
+    font-family: 'Muli', sans-serif;
+}
+
+.boxSquare{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.boxWide{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.boxWrapper{
+    height: calc(100vh - 60px);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    justify-items: stretch;
+    align-items: stretch;
+    grid-auto-rows: 200px;
+    grid-gap: 0px;
+    background-color: #49417F;
+    background: #eeeeee;
+        background: -webkit-linear-gradient(60deg,  #dddddd 0%,#49417F 100%);
+        background: -o-linear-gradient(45deg,  #dddddd 0%,#49417F 100%);
+        background: linear-gradient(45deg,  #dddddd 0%,#49417F 100%);
+    border-bottom: 3px solid goldenrod;
+}
+
+.front{
+    color: #ffffff;
+    width: 100%;
+}
+
+.front .inner{
+   align-self: center;
+ }
+
+ .front .inner p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+.imgBox1{
+    background-image: url("../../assets/images/purplewall.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.imgBox2{
+    background-image: url("../../assets/images/purpleflower.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+
+.imgBox3{
+    background-image: url("../../assets/images/purplesky.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.imgBox4{
+    background-image: url("../../assets/images/purplerain.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.imgBox5{
+    background-image: url("../../assets/images/purplegrass.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Very Small Screens - Smaller than 576px */
+@media (max-width: 575.98px) { 
+
+    .back, .front {
+        min-width: 50%;
+    }
+
+    .box-long{
+        grid-column: span 6;
+        grid-row: span 1;
+    }
+
+    .boxName{
+        grid-column: 1/13;
+        grid-row: 2/3;
+    }
+
+    .boxSquare{
+        grid-column: span 6;
+    }
+
+    .boxWide{
+        grid-column: span 12;
+    }
+
+    .box5{
+        grid-column: 7/13;
+        grid-row: 4/5;
+    }
+
+    .box6{
+        grid-column: 7/13;
+        grid-row: 5/6;
+    }
+    
+    .box7{
+        grid-column: 1/7;
+        grid-row: 4/5;
+    } 
+}
+
+
+/* Small Devices - (landscape Phones - 576px and Up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  
+    .back, .front {
+        min-width: 50%;
+    }
+
+    .boxLong{
+        grid-column: span 6;
+        grid-row: span 1;
+    }
+
+    .boxName{
+        grid-column: 1/13;
+        grid-row: 2/3;
+    }
+
+    .boxSquare{
+        grid-column: span 6;
+    }
+
+    .boxWide{
+        grid-column: span 12;
+    }
+
+    .box5{
+        grid-column: 7/13;
+        grid-row: 4/5;
+    }
+
+    .box6{
+        grid-column: 7/13;
+        grid-row: 5/6;
+    }
+    
+    .box7{
+        grid-column: 1/7;
+        grid-row: 4/5;
+    }
+
+}
+
+/* Medium devices (Tablets - 768px and Up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
