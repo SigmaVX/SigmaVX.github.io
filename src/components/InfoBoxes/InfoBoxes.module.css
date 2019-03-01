@@ -10,7 +10,7 @@
     grid-template-columns: 1fr;
     align-items: stretch;
     justify-items: stretch;
-    width: 100%;
+    width: 101%;
     height: 100%;
     font-size: 16px;
 }
@@ -134,10 +134,17 @@
     grid-column: span 2;
     grid-row: span 1;
     text-align: center;
-    padding-top: 5%;
+    padding-top: 11%;
+    align-self: stretch;
     background-color: #49417F;
     color: #fff;  
     font-family: 'Muli', sans-serif;
+}
+
+.boxName>h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+    /* padding-bottom: 10px; */
 }
 
 .boxSquare{
@@ -152,24 +159,31 @@
 
 .boxWrapper{
     height: calc(100vh - 60px);
+    width: 100vw;
+    box-sizing: border-box;
+
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3,1fr);
     justify-items: stretch;
     align-items: stretch;
-    grid-auto-rows: 200px;
     grid-gap: 0px;
-    background-color: #49417F;
-    background: #eeeeee;
+    background-image: url("../../assets/images/purplesquares.jpg");
+    background-size: cover;
+    background-position: center;
+    /* background-color: #49417F; */
+    /* background: #eeeeee;
         background: -webkit-linear-gradient(60deg,  #dddddd 0%,#49417F 100%);
         background: -o-linear-gradient(45deg,  #dddddd 0%,#49417F 100%);
-        background: linear-gradient(45deg,  #dddddd 0%,#49417F 100%);
+        background: linear-gradient(45deg,  #dddddd 0%,#49417F 100%); */
     border-bottom: 3px solid goldenrod;
 }
 
 .front{
     color: #ffffff;
-    width: 100%;
+    /* justify-self: stretch;
+    align-self: stretch; */
+    width: 101%;
 }
 
 .front .inner{
@@ -177,7 +191,7 @@
  }
 
  .front .inner p{
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 10px;
 }
 
@@ -192,7 +206,6 @@
     background-image: url("../../assets/images/purpleflower.jpg");
     background-size: cover;
     background-position: center;
-    min-height: 400px;
 }
 
 .imgBox3{
@@ -213,54 +226,33 @@
     background-position: center;
 }
 
+.imgBox6{
+    background-image: url("../../assets/images/purple-storm-raw.jpg");
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+
+.imgBox7{
+    background-image: url("../../assets/images/purple-lake-raw.jpg");
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+
 
 /* Very Small Screens - Smaller than 576px */
 @media (max-width: 575.98px) { 
 
+    .boxWrapper{
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(9,1fr);
+        height: auto;
+    }
+
     .back, .front {
-        min-width: 50%;
-    }
-
-    .box-long{
-        grid-column: span 6;
-        grid-row: span 1;
-    }
-
-    .boxName{
-        grid-column: 1/13;
-        grid-row: 2/3;
-    }
-
-    .boxSquare{
-        grid-column: span 6;
-    }
-
-    .boxWide{
-        grid-column: span 12;
-    }
-
-    .box5{
-        grid-column: 7/13;
-        grid-row: 4/5;
-    }
-
-    .box6{
-        grid-column: 7/13;
-        grid-row: 5/6;
-    }
-    
-    .box7{
-        grid-column: 1/7;
-        grid-row: 4/5;
-    } 
-}
-
-
-/* Small Devices - (landscape Phones - 576px and Up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-  
-    .back, .front {
-        min-width: 50%;
+        min-width: 50vw;
+        min-height: 50vw;
     }
 
     .boxLong{
@@ -271,10 +263,13 @@
     .boxName{
         grid-column: 1/13;
         grid-row: 2/3;
+        margin: -1px;
+        padding-top: 15%;
     }
 
     .boxSquare{
         grid-column: span 6;
+        
     }
 
     .boxWide{
@@ -282,18 +277,60 @@
     }
 
     .box5{
-        grid-column: 7/13;
-        grid-row: 4/5;
+        grid-column: 1/7;
+        grid-row: 6/7;
     }
 
-    .box6{
-        grid-column: 7/13;
-        grid-row: 5/6;
+    .imgBox6{
+        display: block;
+    }
+
+    .imgBox7{
+        display: block;
+    }
+}
+
+
+/* Small Devices - (landscape Phones - 576px to 769px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .back{
+        margin: -1px;
+    }
+
+    .back .inner p{
+        font-size: 13px;
+    }
+
+    .box .front .inner{
+        font-size: 2rem;
+    }
+
+    .boxName{
+        padding-top: 11%;
+        align-self: stretch;
+        background-color: #49417F;
+        color: #fff;  
+        font-family: 'Muli', sans-serif;
     }
     
-    .box7{
-        grid-column: 1/7;
-        grid-row: 4/5;
+    .boxName>h1{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .boxName>p{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .boxWrapper{
+        height: calc(100vh - 60px);
+    }
+
+    .front .inner p{
+        font-size: 14px;
+        margin-top: 10px;
     }
 
 }
@@ -306,6 +343,10 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) { 
   
+    .boxName>h1{
+        padding-top: 11%;
+    }
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

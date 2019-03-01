@@ -16,7 +16,5 @@
 
 /* If Device With Is Over 500px */
 @media (max-width: 500px){
-    .Logo, Logo img{
-        display: none;
-    }
+    
 }

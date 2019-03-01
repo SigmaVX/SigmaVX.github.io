@@ -1,43 +1,52 @@
-import React from "react";
-import styles from "./Carousel.module.css";
+import React, {Component} from "react";
+import "./Carousel.css";
+import * as logic from "./logic.js";
 
 
-const Carousel = () =>{
-    return (
-        <React.Fragment>
-            <section>
-                <div className={styles.gridWrapper} id="grid">
-                    {/* Images */}
-                    <div className={[styles.box, styles.scaleIn].join(" ")} id="box-1"></div>
-                    <div className={[styles.box, styles.scaleIn].join(" ")} id="box-2"></div>
-                    <div className={[styles.box, styles.scaleIn].join(" ")} id="box-3"></div>
-                    <div className={[styles.box, styles.scaleIn].join(" ")} id="box-4"></div>
-                    <div className={[styles.box, styles.scaleIn].join(" ")} id="box-5"></div>
-                    <div className={[styles.box, styles.scaleIn].join(" ")} id="box-6"></div>
-                </div>
-            </section>
+class Carousel extends Component {
 
-            <section className="icon-section">
-                {/* Buttons & Controls */}
-                <div className={styles.iconWrap} id="play">
-                    <i className="icon far fa-play-circle"></i>
-                </div>
-                <div className={styles.iconWrap} id="pause">
-                    <i className="icon far fa-pause-circle"></i>
-                </div>
-                <div className={styles.iconWrap} id="shuffle">
-                    <i className="icon fas fa-random"></i>
-                </div>   
-            </section>
+    componentDidMount(){
+        const script = document.createElement("script");
+        script.src = logic;
+        script.type = 'text/javascript';
+        script.async = true;
 
-            <section id="pause-modal">
-                <div>
-                    <div className={styles.ldsRipple}><div></div><div></div><br></br>
-                        Finishing Animations...<br></br>Please Wait While The Carousel<br></br> Comes To Complete Stop!<br></br>Press Play To Continue.
+        document.body.appendChild(script);
+    }
+
+    render(){
+        return (
+            <React.Fragment>
+                <section>
+                    <div className="gridWrapper" id="grid">
+                    <h2 className="portfolioHeader">Portfolio</h2>
+                        {/* Images */}
+                        <div className="box scaleIn" id="box-1"></div>
+                        <div className="box scaleIn" id="box-2"></div>
+                        <div className="box scaleIn" id="box-3"></div>
+                        <div className="box scaleIn" id="box-4"></div>
+                        <div className="box scaleIn" id="box-5"></div>
+                        <div className="box scaleIn" id="box-6"></div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-        </React.Fragment>
-    )
+
+                <section className="iconSection">
+                    {/* Buttons & Controls */}
+                    <div className="iconWrap" id="play">
+                        <i className="icon far fa-play-circle"></i>
+                    </div>
+                    <div className="iconWrap" id="pause">
+                        <i className="icon far fa-pause-circle"></i>
+                    </div>
+                    <div className="iconWrap" id="shuffle">
+                        <i className="icon fas fa-random"></i>
+                    </div>   
+                </section>
+
+            </React.Fragment>
+        )
+    }
 }
+
+export default Carousel;

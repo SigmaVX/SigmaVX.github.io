@@ -19,7 +19,7 @@ const About = (props) =>{
                 </p>
 
                 <p className={[styles.aboutBubble, styles.aboutText, styles.aboutP2].join(" ")} id="about-p2">
-                    Worked with executives teams at Fortune 50 companies, launched multi-platform digital products from inception, and lead diverse teams of developers, designers, and analysts.   
+                    Worked with executives at Fortune 50 companies, launched multi-platform products from inception, and lead diverse teams.   
                 </p>
 
                 <p className={[styles.aboutBubble, styles.aboutText, styles.aboutP3].join(" ")} id="about-p3">

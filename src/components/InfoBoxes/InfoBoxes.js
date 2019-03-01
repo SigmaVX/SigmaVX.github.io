@@ -140,14 +140,20 @@ const InfoBoxes = (props) => {
                     </div>
                 </div>
 
-            
+                <div className={[styles.boxSquare, styles.imgBox6].join(" ")} id="imgBox6">
+                    {/* Image 6 - hide on desktop */}
+                </div>
+                
+                <div className={[styles.boxSquare, styles.imgBox7].join(" ")} id="imgBox7">
+                    {/* Image 7 - hide on Desktop */}
+                </div>
 
                 {/* Box 8 */}
                 <div  className={[styles.box, styles.boxSquare, styles.box8].join(" ")} id="box8">
                     <div className={styles.front}>
                         <div className={styles.inner}>
                             <i className="fas fa-handshake"></i>
-                            <p>Business<br/>Development</p>
+                            <p>Product<br/>Development</p>
                         </div>
                     </div>
                     <div className={styles.back}>
@@ -156,6 +162,8 @@ const InfoBoxes = (props) => {
                         </div>
                     </div>
                 </div>
+
+             
 
             </div>
         )

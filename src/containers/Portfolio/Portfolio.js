@@ -1,5 +1,6 @@
 import React from "react";
 import Particles from 'react-particles-js';
+import Carousel from "../../components/Carousel/Carousel";
 import styles from "./Portfolio.module.css";
 
 const Portfolio = () =>{
@@ -151,22 +152,42 @@ const Portfolio = () =>{
         }
     ]
 
+    // Set Header Based On Screen Size
+    let portfolioHeader = <Carousel />;
+    console.log(window.screen.width)
+    if(window.screen.width < 768){
+        portfolioHeader = (
+            <div className="jumbotron">
+                <h2>Portfolio</h2>
+            </div>
+        )
+    }
+    
+    // Set Canvas Size Based on Screen Size
+    let canvasHeight = String(projects.length-1)*390+"px";
+    
+    if(window.screen.width < 576){
+        canvasHeight = String(projects.length-1)*450+"px";
+    }
+    
+    if(window.screen.width > 576 && window.screen.width < 768){
+        canvasHeight = String(projects.length-1)*550+"px";
+    }
 
- 
 
     return(
             
         <section className={styles.portfolioWrapper} id="portfolio">
+
+           
+            {portfolioHeader}
             
-            <div className="jumbotron">
-                <h2>Portfolio</h2>
-            </div>
         
             <div className={styles.particleContainer}>
                 
                 <Particles 
                     className={styles.particleBackground}
-                    height={String(window.innerHeight)*10+"px"}    
+                    height={canvasHeight}    
                     params={
                         {
                             "particles": {
@@ -178,7 +199,7 @@ const Portfolio = () =>{
                                 }
                                 },
                                 "color": {
-                                "value": "#503a78"
+                                "value": ["#ff0000", "#00ff00", "#0000ff"]
                                 },
                                 "shape": {
                                 "type": "circle",
@@ -286,9 +307,15 @@ const Portfolio = () =>{
                 
                     { projects.map((project, index)=>{
 
-                        if(Number(index) % 2 === 0){
+                        if(window.screen.width < 768){
                             return(
                                 <div className={styles.projectRow} key={index}>
+                                    <div className={[styles.projectImgWrapper].join(" ")}>
+                                        <a rel="noopener noreferrer" href={project.siteURL} target="_blank">
+                                            <img className={styles.projectImg} src={project.imageSrc} alt={project.projectName}/>
+                                        </a>
+                                    </div>
+
                                     <div className={[styles.projectText, `project${index+1}`].join(" ")}>
                                         <a rel="noopener noreferrer" href={project.siteURL} target="_blank">
                                             <h2>{project.projectName}</h2>
@@ -302,36 +329,58 @@ const Portfolio = () =>{
                                         </p>
                                     </div>
 
-                                    <div className={[styles.projectImgWrapper].join(" ")}>
-                                        <a rel="noopener noreferrer" href={project.siteURL} target="_blank">
-                                            <img className={styles.projectImg} src={project.imageSrc} alt={project.projectName}/>
-                                        </a>
-                                    </div>
+                                    
                                 </div>
                             );
                         } else {
-                            return(
-                                <div className={styles.projectRow} key={index}>
-                                    <div className={[styles.projectImgWrapperAlt].join(" ")}>
-                                        <a rel="noopener noreferrer" href={project.siteURL} target="_blank">
-                                            <img className={styles.projectImg} src={project.imageSrc} alt={project.projectName}/>
-                                        </a>
-                                    </div>
 
-                                    <div className={[styles.projectTextAlt, `project${index+1}`].join(" ")}>
-                                        <a rel="noopener noreferrer" href={project.siteURL} target="_blank">
-                                            <h2>{project.projectName}</h2>
-                                        </a>
-                                        <div className={styles.gitIcons}>
-                                            <i className={project.codeIcon}></i>
-                                            {project.privateRepo ? " (Code In Private Repo)" : " (See The Code)"}
+                            if(Number(index) % 2 === 0){
+                                return(
+                                    <div className={styles.projectRow} key={index}>
+                                        <div className={[styles.projectText, `project${index+1}`].join(" ")}>
+                                            <a rel="noopener noreferrer" href={project.siteURL} target="_blank">
+                                                <h2>{project.projectName}</h2>
+                                            </a>
+                                            <div className={styles.gitIcons}>
+                                                <i className={project.codeIcon}></i>
+                                                {project.privateRepo ? " (Code In Private Repo)" : " (See The Code)"}
+                                            </div>
+                                            <p>
+                                                {project.description}
+                                            </p>
                                         </div>
-                                        <p>
-                                            {project.description}
-                                        </p>
+
+                                        <div className={[styles.projectImgWrapper].join(" ")}>
+                                            <a rel="noopener noreferrer" href={project.siteURL} target="_blank">
+                                                <img className={styles.projectImg} src={project.imageSrc} alt={project.projectName}/>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                            );
+                                );
+                            } else {
+                                return(
+                                    <div className={styles.projectRow} key={index}>
+                                        <div className={[styles.projectImgWrapperAlt].join(" ")}>
+                                            <a rel="noopener noreferrer" href={project.siteURL} target="_blank">
+                                                <img className={styles.projectImg} src={project.imageSrc} alt={project.projectName}/>
+                                            </a>
+                                        </div>
+
+                                        <div className={[styles.projectTextAlt, `project${index+1}`].join(" ")}>
+                                            <a rel="noopener noreferrer" href={project.siteURL} target="_blank">
+                                                <h2>{project.projectName}</h2>
+                                            </a>
+                                            <div className={styles.gitIcons}>
+                                                <i className={project.codeIcon}></i>
+                                                {project.privateRepo ? " (Code In Private Repo)" : " (See The Code)"}
+                                            </div>
+                                            <p>
+                                                {project.description}
+                                            </p>
+                                        </div>
+                                    </div>
+                                );
+                            }
                         }
                         })
                     }
@@ -355,3 +404,5 @@ checkHeight();
 
 
 export default Portfolio; 
+
+// Old Jumbo - Not Used
