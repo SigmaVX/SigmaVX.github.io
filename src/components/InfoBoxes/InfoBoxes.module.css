@@ -6,12 +6,6 @@
     color: #000000;
     position: absolute;
     margin: 0px;
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: stretch;
-    justify-items: stretch;
-    width: 101%;
-    height: 100%;
     font-size: 16px;
 }
 
@@ -23,10 +17,10 @@
         -webkit-backface-visibility: hidden;
     text-align: center; 
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
-    /* align-items: stretch;
-    justify-items: stretch;     */
+    align-items: stretch;
+    justify-items: stretch;    
+    width: 100%;
+    height: 100%;
 }
   
 .bounce{
@@ -39,7 +33,7 @@
     grid-template-columns: 1fr;
     justify-items: center;
     position: relative;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-family: 'Muli', sans-serif;
 
     /* for annimation */
     -webkit-transform-style: preserve-3d;
@@ -103,26 +97,57 @@
     background-color: #855FFF;
   }
 
-.box:hover .back{
+.box:hover .back,
+.boxName:hover,
+.imgBox1:hover,
+.imgBox2:hover, 
+.imgBox3:hover,
+.imgBox4:hover,
+.imgBox5:hover,
+.imgBox6:hover,
+.imgBox7:hover{
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
 
-.box:hover .front{
+.box:hover .front,
+.imgBox2:hover, 
+.imgBox3:hover,
+.imgBox4:hover,
+.imgBox5:hover,
+.imgBox6:hover,
+.imgBox7:hover{
     -webkit-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
 
-.box:hover .front, .box:hover .back{
-    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+.boxName:hover,
+.imgBox1:hover{
+    -webkit-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.box:hover .front, 
+.box:hover .back,
+.boxName:hover,
+.imgBox1:hover,
+.imgBox2:hover, 
+.imgBox3:hover,
+.imgBox4:hover,
+.imgBox5:hover,
+.imgBox6:hover,
+.imgBox7:hover{
+    -webkit-transition: -webkit-transform 1.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform 1.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform 1.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform 1.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform 1.5s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 1.5s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 
 .boxLong{
@@ -134,22 +159,27 @@
     grid-column: span 2;
     grid-row: span 1;
     text-align: center;
-    padding-top: 11%;
-    align-self: stretch;
+    align-self: center;
     background-color: #49417F;
     color: #fff;  
     font-family: 'Muli', sans-serif;
+    width: 100%;
+    height: 100%;
 }
 
 .boxName>h1{
     font-size: 30px;
     margin-bottom: 10px;
-    /* padding-bottom: 10px; */
+    font-weight: 1000;   
+    padding-top: 11%; 
 }
 
 .boxSquare{
     grid-column: span 1;
     grid-row: span 1;
+    align-self: stretch;    
+    justify-self: stretch;
+
 }
 
 .boxWide{
@@ -161,29 +191,21 @@
     height: calc(100vh - 60px);
     width: 100vw;
     box-sizing: border-box;
-
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3,1fr);
     justify-items: stretch;
     align-items: stretch;
     grid-gap: 0px;
-    background-image: url("../../assets/images/purplesquares.jpg");
+    background-image: url("../../assets/images/yellow-flower3.jpg");
     background-size: cover;
     background-position: center;
-    /* background-color: #49417F; */
-    /* background: #eeeeee;
-        background: -webkit-linear-gradient(60deg,  #dddddd 0%,#49417F 100%);
-        background: -o-linear-gradient(45deg,  #dddddd 0%,#49417F 100%);
-        background: linear-gradient(45deg,  #dddddd 0%,#49417F 100%); */
+    z-index: 0;
     border-bottom: 3px solid goldenrod;
 }
 
 .front{
     color: #ffffff;
-    /* justify-self: stretch;
-    align-self: stretch; */
-    width: 101%;
 }
 
 .front .inner{
@@ -195,48 +217,53 @@
     margin-top: 10px;
 }
 
+.imgBox1, 
+.imgBox2, 
+.imgBox3,
+.imgBox4,
+.imgBox5,
+.imgBox6,
+.imgBox7,
+.boxName:hover{
+    transition: transform 1.5s cubic-bezier(0.4, 0.2, 0.2, 1);  
+    -webkit-transition: -webkit-transform 1.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform 1.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    justify-self: stretch;
+}
 
 .imgBox1{
     background-image: url("../../assets/images/purplewall.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 .imgBox2{
     background-image: url("../../assets/images/purpleflower.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 .imgBox3{
     background-image: url("../../assets/images/purplesky.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 .imgBox4{
     background-image: url("../../assets/images/purplerain.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 .imgBox5{
     background-image: url("../../assets/images/purplegrass.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 .imgBox6{
     background-image: url("../../assets/images/purple-storm-raw.jpg");
-    background-size: cover;
-    background-position: center;
     display: none;
 }
 
 .imgBox7{
     background-image: url("../../assets/images/purple-lake-raw.jpg");
-    background-size: cover;
-    background-position: center;
     display: none;
 }
 
@@ -264,6 +291,9 @@
         grid-column: 1/13;
         grid-row: 2/3;
         margin: -1px;
+    }
+
+    .boxName>h1{
         padding-top: 15%;
     }
 
@@ -294,20 +324,19 @@
 /* Small Devices - (landscape Phones - 576px to 769px) */
 @media (min-width: 576px) and (max-width: 767.98px) {
 
-    .back{
+    /* .back, .front{
         margin: -1px;
-    }
+    } */
 
     .back .inner p{
-        font-size: 13px;
+        font-size: 10px;
     }
 
     .box .front .inner{
         font-size: 2rem;
     }
 
-    .boxName{
-        padding-top: 11%;
+    .boxName{ 
         align-self: stretch;
         background-color: #49417F;
         color: #fff;  
@@ -317,6 +346,7 @@
     .boxName>h1{
         font-size: 25px;
         margin-bottom: 10px;
+        padding-top: 11%;
     }
 
     .boxName>p{
@@ -335,16 +365,28 @@
 
 }
 
-/* Medium devices (Tablets - 768px and Up) */
+/* Medium devices (Tablets - 768px to 992px) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
 
+    .back .inner p{
+        font-size: 12px;
+    }
+
+    .boxWrapper{
+        height: 500px;
+    }
+
+    .front .inner p{
+        font-size: 14px;
+        margin-top: 10px;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) { 
   
     .boxName>h1{
-        padding-top: 11%;
+        padding-top: 15%;
     }
 
 }

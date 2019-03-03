@@ -48,7 +48,7 @@
     }
 
     .Toolbar{
-        grid-template-columns: 60px auto 175px;
+        grid-template-columns: 60px auto 150px;
         grid-gap: 0px;
     }
 }
