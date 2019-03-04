@@ -7,7 +7,7 @@ import Spinner from './components/UI/Spinner/Spinner';
 const Home = React.lazy(() => import("./containers/Home/Home"));
 const Portfolio = React.lazy(() => import("./containers/Portfolio/Portfolio"));
 
-
+// Note This App Must Be Deployed From Mac For RSA To Work
 class App extends Component {
 
   render() {
