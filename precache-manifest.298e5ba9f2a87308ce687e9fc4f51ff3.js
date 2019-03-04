@@ -4,36 +4,36 @@ self.__precacheManifest = [
     "url": "/static/media/nyt.720b224e.jpg"
   },
   {
-    "revision": "769930b570e304ed987d",
-    "url": "/static/css/0.2907814a.chunk.css"
+    "revision": "7f4135a40ae829bd9a38",
+    "url": "/static/css/0.206337dc.chunk.css"
   },
   {
     "revision": "49364dba106f013bbda8",
     "url": "/static/js/1.49364dba.chunk.js"
   },
   {
-    "revision": "2558c1d025d1dc4c73f3",
-    "url": "/static/css/main.019c01e2.chunk.css"
+    "revision": "30dc4e71378d7c9430e4",
+    "url": "/static/css/main.f1f37fae.chunk.css"
   },
   {
-    "revision": "2558c1d025d1dc4c73f3",
-    "url": "/static/js/main.2558c1d0.chunk.js"
+    "revision": "30dc4e71378d7c9430e4",
+    "url": "/static/js/main.30dc4e71.chunk.js"
   },
   {
-    "revision": "4ea5d7540a2026d5038c",
-    "url": "/static/js/runtime~main.4ea5d754.js"
+    "revision": "7790c30862bde9cc86ae",
+    "url": "/static/js/runtime~main.7790c308.js"
   },
   {
     "revision": "99fb76e5dbb1e75ec787",
     "url": "/static/js/4.99fb76e5.chunk.js"
   },
   {
-    "revision": "ce457992de216d7633aa",
-    "url": "/static/css/5.3b8c2e6c.chunk.css"
+    "revision": "a0a9104fbc0e838d0503",
+    "url": "/static/css/5.80119a1b.chunk.css"
   },
   {
-    "revision": "ce457992de216d7633aa",
-    "url": "/static/js/5.ce457992.chunk.js"
+    "revision": "a0a9104fbc0e838d0503",
+    "url": "/static/js/5.a0a9104f.chunk.js"
   },
   {
     "revision": "2adb9a7823ca1788d464727771d414aa",
@@ -72,8 +72,8 @@ self.__precacheManifest = [
     "url": "/static/media/mobile.6580b476.jpg"
   },
   {
-    "revision": "769930b570e304ed987d",
-    "url": "/static/js/0.769930b5.chunk.js"
+    "revision": "7f4135a40ae829bd9a38",
+    "url": "/static/js/0.7f4135a4.chunk.js"
   },
   {
     "revision": "e11c28745ce588a3017cc0356db2492d",
@@ -144,7 +144,7 @@ self.__precacheManifest = [
     "url": "/static/media/alerts_me.58cef30a.jpg"
   },
   {
-    "revision": "2f9e22c2d1ba57a00ec109967d906934",
+    "revision": "5c838f8d2c0daae4baaf1bfa76a129b9",
     "url": "/index.html"
   }
 ];
