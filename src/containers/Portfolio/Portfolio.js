@@ -26,12 +26,12 @@ const Portfolio = () =>{
         },
         {
             projectName: "AlertsMe",
-            siteURL: "",
+            siteURL: "https://www.fortitudedev.com/",
             codeURL: "",
             codeIcon: "fab fa-github",
             privateRepo: true,
-            imageSrc: require("../../assets/images/projects/alerts_me.png"),
-            description: "Add Text"
+            imageSrc: require("../../assets/images/projects/alerts_me.jpg"),
+            description: "This full stack app was built with Fortidue using React, Node, and MongoDB. It provides geocoding, data visualizations, real-time chat,  user authentication, and more to help businesses track dangerous conditions, user locations, and much more.  It makes use of Google Maps API and multiple React libraries."
         },
         {
             projectName: "Tilt GG",
