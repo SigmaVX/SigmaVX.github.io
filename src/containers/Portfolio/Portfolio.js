@@ -1,6 +1,6 @@
 import React from "react";
 import Particles from 'react-particles-js';
-import Carousel from "../../components/Carousel/Carousel";
+// import Carousel from "../../components/Carousel/Carousel";
 import styles from "./Portfolio.module.css";
 
 const Portfolio = () =>{
@@ -50,6 +50,24 @@ const Portfolio = () =>{
             privateRepo: false,
             imageSrc: require("../../assets/images/projects/agile_flow.jpg"),
             description: "Accelerate your learning of new tech with a community that lets you get to the heart of burning tech questions.  Stop wasting time searching and get to the core of things in less than 15 minutes. Agile Flow is designed help developers learn targeted topics in a relatively short amount of time by leveraging a peer developer community, ratings, and Agile principles.  This full stack Node app incorporates user authentication, image uploads, and a SQL database with a Sequelize ORM."
+        },
+        {
+            projectName: "React Burger Redux",
+            siteURL: "https://sigmavx.github.io/React-Burger-Redux/",
+            codeURL: "https://github.com/SigmaVX/React-Burger-Redux",
+            codeIcon: "align-middle fab fa-github",
+            privateRepo: false,
+            imageSrc: require("../../assets/images/projects/react_burger.png"),
+            description: "This simple front end app is less about burgers and more about showing the power of React with over 30 techniques ranging from Redux integration, higher order components, Axios interceptors, CSS Modules, token-based user authentication, security guards, validations, conditional routes, and much more."
+        },
+        {
+            projectName: "Carousel",
+            siteURL: "https://sigmavx.github.io/Carousel/",
+            codeURL: "https://github.com/SigmaVX/Carousel",
+            codeIcon: "align-middle fab fa-github",
+            privateRepo: false,
+            imageSrc: require("../../assets/images/projects/carousel.png"),
+            description: "Carousel is a reusable component for displaying images using vanilla JavaScript and CSS grid.  Users can adjust the display with a simple click or shuffle the display random layouts.  The component can be used in server-side views, static sites, or as a React component."
         },
         {
             projectName: "Cortex - Memory App",
@@ -162,15 +180,21 @@ const Portfolio = () =>{
     ]
 
     // Set Header Based On Screen Size
-    let portfolioHeader = <Carousel />;
-    console.log(window.screen.width)
-    if(window.screen.width < 768){
-        portfolioHeader = (
-            <div className="jumbotron">
-                <h2>Portfolio</h2>
-            </div>
-        )
-    }
+    // let portfolioHeader = <Carousel />;
+    // console.log(window.screen.width)
+    // if(window.screen.width < 768){
+    //     portfolioHeader = (
+    //         <div className="jumbotron">
+    //             <h2>Portfolio</h2>
+    //         </div>
+    //     )
+    // }
+
+    let portfolioHeader = (
+        <div className="jumbotron">
+            <h2>Portfolio</h2>
+        </div>
+    )
     
     // Set Canvas Size Based on Screen Size
     let canvasHeight = String(projects.length-1)*390+"px";
@@ -199,125 +223,127 @@ const Portfolio = () =>{
            
             {portfolioHeader}
             
-        
+            {/* Particles Div Background - Not Used 
             <div className={styles.particleContainer}>
-                
+
                 <Particles 
-                    className={styles.particleBackground}
-                    height={canvasHeight}    
-                    params={
-                        {
-                            "particles": {
-                                "number": {
-                                "value": 100,
-                                "density": {
-                                    "enable": false,
-                                    "value_area": 0
-                                }
-                                },
-                                "color": {
-                                "value": ["#ff0000", "#00ff00", "#0000ff"]
-                                },
-                                "shape": {
-                                "type": "circle",
-                                "stroke": {
-                                    "width": 0,
-                                    "color": "#000000"
-                                },
-                                "polygon": {
-                                    "nb_sides": 5
-                                },
-                                "image": {
-                                    "src": "",
-                                    "width": 400,
-                                    "height": 370
-                                }
-                                },
-                                "opacity": {
-                                "value": 0.5,
-                                "random": true,
-                                "anim": {
-                                    "enable": false,
-                                    "speed": 1,
-                                    "opacity_min": 0.1,
-                                    "sync": false
-                                }
-                                },
-                                "size": {
-                                "value": 10,
-                                "random": true,
-                                "anim": {
-                                    "enable": false,
-                                    "speed": 30,
-                                    "size_min": 0.1,
-                                    "sync": false
-                                }
-                                },
-                                "line_linked": {
+                className={styles.particleBackground}
+                height={canvasHeight}    
+                params={
+                    {
+                        "particles": {
+                            "number": {
+                            "value": 100,
+                            "density": {
                                 "enable": false,
-                                "distance": 500,
-                                "color": "#ffffff",
-                                "opacity": 0.4,
-                                "width": 2
-                                },
-                                "move": {
+                                "value_area": 0
+                            }
+                            },
+                            "color": {
+                            "value": ["#ff0000", "#00ff00", "#0000ff"]
+                            },
+                            "shape": {
+                            "type": "circle",
+                            "stroke": {
+                                "width": 0,
+                                "color": "#000000"
+                            },
+                            "polygon": {
+                                "nb_sides": 5
+                            },
+                            "image": {
+                                "src": "",
+                                "width": 400,
+                                "height": 370
+                            }
+                            },
+                            "opacity": {
+                            "value": 0.5,
+                            "random": true,
+                            "anim": {
+                                "enable": false,
+                                "speed": 1,
+                                "opacity_min": 0.1,
+                                "sync": false
+                            }
+                            },
+                            "size": {
+                            "value": 10,
+                            "random": true,
+                            "anim": {
+                                "enable": false,
+                                "speed": 30,
+                                "size_min": 0.1,
+                                "sync": false
+                            }
+                            },
+                            "line_linked": {
+                            "enable": false,
+                            "distance": 500,
+                            "color": "#ffffff",
+                            "opacity": 0.4,
+                            "width": 2
+                            },
+                            "move": {
+                            "enable": true,
+                            "speed": 6,
+                            "direction": "bottom",
+                            "random": false,
+                            "straight": false,
+                            "out_mode": "out",
+                            "bounce": false,
+                            "attract": {
+                                "enable": false,
+                                "rotateX": 600,
+                                "rotateY": 1200
+                            }
+                            }
+                        },
+                        "interactivity": {
+                            "detect_on": "canvas",
+                            "events": {
+                            "onhover": {
                                 "enable": true,
-                                "speed": 6,
-                                "direction": "bottom",
-                                "random": false,
-                                "straight": false,
-                                "out_mode": "out",
-                                "bounce": false,
-                                "attract": {
-                                    "enable": false,
-                                    "rotateX": 600,
-                                    "rotateY": 1200
-                                }
+                                "mode": "bubble"
+                            },
+                            "onclick": {
+                                "enable": true,
+                                "mode": "repulse"
+                            },
+                            "resize": true
+                            },
+                            "modes": {
+                            "grab": {
+                                "distance": 400,
+                                "line_linked": {
+                                "opacity": 0.5
                                 }
                             },
-                            "interactivity": {
-                                "detect_on": "canvas",
-                                "events": {
-                                "onhover": {
-                                    "enable": true,
-                                    "mode": "bubble"
-                                },
-                                "onclick": {
-                                    "enable": true,
-                                    "mode": "repulse"
-                                },
-                                "resize": true
-                                },
-                                "modes": {
-                                "grab": {
-                                    "distance": 400,
-                                    "line_linked": {
-                                    "opacity": 0.5
-                                    }
-                                },
-                                "bubble": {
-                                    "distance": 400,
-                                    "size": 4,
-                                    "duration": 0.3,
-                                    "opacity": 1,
-                                    "speed": 3
-                                },
-                                "repulse": {
-                                    "distance": 200,
-                                    "duration": 0.4
-                                },
-                                "push": {
-                                    "particles_nb": 4
-                                },
-                                "remove": {
-                                    "particles_nb": 2
-                                }
-                                }
+                            "bubble": {
+                                "distance": 400,
+                                "size": 4,
+                                "duration": 0.3,
+                                "opacity": 1,
+                                "speed": 3
                             },
-                        "retina_detect": true
-                        }
+                            "repulse": {
+                                "distance": 200,
+                                "duration": 0.4
+                            },
+                            "push": {
+                                "particles_nb": 4
+                            },
+                            "remove": {
+                                "particles_nb": 2
+                            }
+                            }
+                        },
+                    "retina_detect": true
                     }
+                }
                 />
+            */}
+            
 
 
                 <div className={["container", styles.projectGridWrapper].join(" ")}>
@@ -325,6 +351,7 @@ const Portfolio = () =>{
                     { projects.map((project, index)=>{
 
                         if(window.screen.width < 768){
+                            console.log("Small Screen Layout For Screen Width: ", window.screen.width);
                             return(
                                 <div className={styles.projectRow} key={index}>
 
@@ -356,7 +383,7 @@ const Portfolio = () =>{
                                 </div>
                             );
                         } else {
-
+                            console.log("Large Screen Layout For Screen Width: ", window.screen.width);                          
                             if(Number(index) % 2 === 0){
                                 return(
                                     <div className={styles.projectRow} key={index}>
@@ -409,23 +436,15 @@ const Portfolio = () =>{
                     }
     
                 </div>    
+                
+            {/* Particle Div - Not Used 
             </div>
+            */}
+
         </section>
         
-    )
-    
+    )   
 }
-
-const checkHeight = () =>{
-    let div = window.document.getElementById('portfolio');
-    console.log(div);
-    // let height = div.offsetHeight;
-    // console.log(height);
-    // return (String(height) + "px");
-}
-checkHeight();
-
 
 export default Portfolio; 
-
-// Old Jumbo - Not Used
+    
