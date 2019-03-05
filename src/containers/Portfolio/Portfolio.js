@@ -1,6 +1,6 @@
 import React from "react";
 import Particles from 'react-particles-js';
-import Carousel from "../../components/Carousel/Carousel";
+// import Carousel from "../../components/Carousel/Carousel";
 import styles from "./Portfolio.module.css";
 
 const Portfolio = () =>{
@@ -50,6 +50,15 @@ const Portfolio = () =>{
             privateRepo: false,
             imageSrc: require("../../assets/images/projects/agile_flow.jpg"),
             description: "Accelerate your learning of new tech with a community that lets you get to the heart of burning tech questions.  Stop wasting time searching and get to the core of things in less than 15 minutes. Agile Flow is designed help developers learn targeted topics in a relatively short amount of time by leveraging a peer developer community, ratings, and Agile principles.  This full stack Node app incorporates user authentication, image uploads, and a SQL database with a Sequelize ORM."
+        },
+        {
+            projectName: "React Burger Redux",
+            siteURL: "https://sigmavx.github.io/React-Burger-Redux/",
+            codeURL: "https://github.com/SigmaVX/React-Burger-Redux",
+            codeIcon: "align-middle fab fa-github",
+            privateRepo: false,
+            imageSrc: require("../../assets/images/projects/react_burger.png"),
+            description: "This simple front end app is less about burgers and more about showing the power of React with over 30 techniques ranging from Redux integration, higher order components, Axios interceptors, CSS Modules, token-based user authentication, security guards, validations, conditional routes, and much more."
         },
         {
             projectName: "Cortex - Memory App",
@@ -162,15 +171,21 @@ const Portfolio = () =>{
     ]
 
     // Set Header Based On Screen Size
-    let portfolioHeader = <Carousel />;
-    console.log(window.screen.width)
-    if(window.screen.width < 768){
-        portfolioHeader = (
-            <div className="jumbotron">
-                <h2>Portfolio</h2>
-            </div>
-        )
-    }
+    // let portfolioHeader = <Carousel />;
+    // console.log(window.screen.width)
+    // if(window.screen.width < 768){
+    //     portfolioHeader = (
+    //         <div className="jumbotron">
+    //             <h2>Portfolio</h2>
+    //         </div>
+    //     )
+    // }
+
+    let portfolioHeader = (
+        <div className="jumbotron">
+            <h2>Portfolio</h2>
+        </div>
+    )
     
     // Set Canvas Size Based on Screen Size
     let canvasHeight = String(projects.length-1)*390+"px";

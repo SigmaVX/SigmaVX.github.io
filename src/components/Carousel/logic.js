@@ -14,6 +14,8 @@ import team_finder from "../../assets/images/projects/team_finder.jpg"
 import tilt from "../../assets/images/projects/tilt.jpg"
 import toon from "../../assets/images/projects/toon.jpg"
 import train from "../../assets/images/projects/train.jpg"
+import burger from "../../assets/images/projects/react_burger.png";
+import alerts from "../../assets/images/projects/alerts_me.jpg";
 
 window.onload = function() {
 
@@ -22,7 +24,7 @@ const colors = ["#2D287F","#A29CFF","#5A4FFF","#514E7F","#483FCC", "#53217F", "#
 
 
 // Our Images - Nature
-const images=[agileflow, cortex, chronos, gameroster, garyvee, gbay, giphy, lardac, mobile, nyt, opine, rpg_game, team_finder, tilt, toon, train]
+const images=[agileflow, cortex, burger, alerts, chronos, gameroster, garyvee, gbay, giphy, lardac, mobile, nyt, opine, rpg_game, team_finder, tilt, toon, train]
 
 // Randomized Array Of Images
 let randomImages = images.sort(function(a, b){return 0.5 - Math.random()})
@@ -46,7 +48,7 @@ let count = 0;
 let carousel;
 
 // Store Grid & Play State
-let shuffleState = "mixed";
+let shuffleState = "boxes";
 let playState = "paused";
 
 // ============================================================================================================
@@ -220,7 +222,6 @@ document.getElementById("play").addEventListener("click", function(){
         document.getElementById("pause-modal").style.display="none";
         playState="playing"
     }
-
 });
 
 // Pause Event Listener
