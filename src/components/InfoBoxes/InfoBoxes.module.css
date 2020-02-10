@@ -172,6 +172,8 @@
     background-position: center;
     z-index: 0;
     border-bottom: 3px solid goldenrod;
+    border-top: 3px solid goldenrod;
+
 }
 
 .front{

@@ -67,7 +67,7 @@ const Portfolio = () =>{
             codeIcon: "align-middle fab fa-github",
             privateRepo: false,
             imageSrc: require("../../assets/images/projects/carousel.png"),
-            description: "Carousel is a reusable component for displaying images using vanilla JavaScript and CSS grid.  Users can adjust the display with a simple click or shuffle the display random layouts.  The component can be used in server-side views, static sites, or as a React component."
+            description: "Carousel is a reusable component for displaying images using vanilla JavaScript and CSS grid.  Users can adjust the display with a simple click or shuffle to display random layouts.  The component can be used in server-side views, static sites, or as a React component."
         },
         {
             projectName: "Cortex - Memory App",
